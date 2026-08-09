@@ -2317,11 +2317,14 @@
         }, 6500);
       }
 
-      // Start feed after 4s, then every 8-14s
-      setTimeout(() => {
-        showFeedPopup();
-        setInterval(() => showFeedPopup(), 8000 + Math.random() * 6000);
-      }, 4000);
+      // Start feed on desktop only (min 768px), first after 6s, then every 18-32s
+      const feedDesktop = window.matchMedia('(min-width: 768px)');
+      if (feedDesktop.matches) {
+        setTimeout(() => {
+          showFeedPopup();
+          setInterval(() => showFeedPopup(), 18000 + Math.random() * 14000);
+        }, 6000);
+      }
 
       const quizPrices = {
         'Regularização MEI': 'R$ 79,90',
