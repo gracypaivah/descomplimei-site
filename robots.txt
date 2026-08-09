@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://descomplimei.com/sitemap.xml
