@@ -804,13 +804,6 @@
           <a class="text-sm font-semibold hover:text-blue-600 transition-colors" href="#contato">Contato</a>
         </nav>
         <div class="flex items-center gap-2">
-          <form id="search-form" class="hidden md:flex items-center rounded-lg border border-slate-300 bg-gray-50 px-3 py-2 w-56 lg:w-64" role="search">
-            <label for="site-search" class="sr-only">Buscar dúvidas sobre MEI</label>
-            <input id="site-search" class="w-full border-0 bg-transparent text-sm outline-none" type="search" placeholder="Buscar dúvidas...">
-            <button type="submit" aria-label="Buscar">
-              <i data-lucide="search" class="w-4 h-4 text-azul/60"></i>
-            </button>
-          </form>
           <a href="https://wa.me/5511927020763" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-1.5 rounded-lg bg-verde px-3.5 py-2 text-xs font-bold text-white transition-all hover:bg-verde/90 shadow-sm" aria-label="Fale conosco pelo WhatsApp">
             <i data-lucide="message-circle" class="w-4 h-4"></i>
             <span class="hidden lg:inline">WhatsApp</span>
@@ -2047,52 +2040,6 @@
           contactForm.reset();
           setTimeout(() => { contactStatus.textContent = ''; }, 8000);
         }, 1200);
-      });
-
-      // Search form — filter FAQ items
-      const searchForm = document.getElementById('search-form');
-      const searchInput = document.getElementById('site-search');
-      const faqList = document.getElementById('faq-list');
-      const faqSection = document.getElementById('faq');
-      const allFaqItems = Array.from(document.querySelectorAll('.accordion-item'));
-
-      function filterFAQ(term) {
-        let hasResults = false;
-        allFaqItems.forEach(item => {
-          const match = item.textContent.toLowerCase().includes(term);
-          item.style.display = match ? '' : 'none';
-          if (match) hasResults = true;
-        });
-        return hasResults;
-      }
-
-      function resetFAQ() {
-        allFaqItems.forEach(item => item.style.display = '');
-      }
-
-      searchForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const term = searchInput.value.trim().toLowerCase();
-        if (!term) return;
-        const hasResults = filterFAQ(term);
-        faqSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        if (!hasResults) {
-          const noResult = document.getElementById('faq-no-result') || document.createElement('p');
-          noResult.id = 'faq-no-result';
-          noResult.className = 'text-center text-sm text-texto/50 mt-4';
-          noResult.textContent = 'Nenhuma pergunta encontrada. Tente outro termo ou entre em contato conosco.';
-          faqList.appendChild(noResult);
-        }
-      });
-
-      searchInput.addEventListener('input', () => {
-        const existing = document.getElementById('faq-no-result');
-        if (existing) existing.remove();
-        if (!searchInput.value.trim()) resetFAQ();
-      });
-
-      searchInput.addEventListener('search', () => {
-        if (!searchInput.value) resetFAQ();
       });
 
       // Scroll reveal
