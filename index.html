@@ -1,0 +1,2554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descomplimei | Contabilidade Popular para MEI — Regularizar, Abrir e Encerrar MEI</title>
+  <meta name="description" content="Regularize, abra ou encerre seu MEI com a Descomplimei. Atendimento humanizado, preço acessível e acompanhamento pelo WhatsApp. Processo simples e 100% online para todo Brasil.">
+  <meta name="keywords" content="MEI, regularização MEI, abrir MEI, encerrar MEI, contabilidade popular, contabilidade para MEI, DAS atrasado, declaração anual MEI, parcelamento DAS">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#123B7A">
+  <link rel="canonical" href="https://descomplimei.com.br/">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Descomplimei | Contabilidade Popular para MEI">
+  <meta property="og:description" content="Regularize, abra ou encerre seu MEI com atendimento humanizado, preço acessível e acompanhamento pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://descomplimei.com.br/">
+  <meta property="og:image" content="https://descomplimei.com.br/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Descomplimei">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Descomplimei | Contabilidade Popular para MEI">
+  <meta name="twitter:description" content="Regularize, abra ou encerre seu MEI com atendimento humanizado, preço acessível e acompanhamento pelo WhatsApp.">
+  <meta name="twitter:image" content="https://descomplimei.com.br/og-image.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            azul: '#123B7A',
+            claro: '#1E88D8',
+            verde: '#0B8F4D',
+            amarelo: '#F4C20D',
+            texto: '#1A2845',
+            cinza: '#F5F7FA',
+          },
+          fontFamily: {
+            raleway: ['Raleway', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Descomplimei",
+    "description": "Contabilidade Popular para MEI — Regularização, Abertura, Encerramento e Plano MEI em Ordem.",
+    "url": "https://descomplimei.com.br",
+    "telephone": "+5500000000000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brasil"
+    },
+    "priceRange": "R$ 9,90 - R$ 109,90",
+    "areaServed": "BR",
+    "serviceType": ["Regularização MEI", "Abertura MEI", "Encerramento MEI", "Contabilidade para MEI"]
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Raleway', sans-serif; color: #1A2845; }
+
+    /* Top Stripe */
+    .top-stripe {
+      height: 5px;
+      background: linear-gradient(to right, #0B8F4D 0 33%, #F4C20D 33% 66%, #1E88D8 66%);
+    }
+
+    /* Hero Orb */
+    .hero-orb {
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      right: -150px;
+      top: -120px;
+      border-radius: 50%;
+      background: rgba(30,136,216,.25);
+      pointer-events: none;
+    }
+
+    /* Popular Word Gradient */
+    .popular-word {
+      font-weight: 800;
+      letter-spacing: .08em;
+      background: linear-gradient(90deg, #0B8F4D 0 45%, #F4C20D 45% 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    /* Hero decorative blobs — slow floating */
+    .hero-blob-1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(11,143,77,.1), transparent 70%);
+      pointer-events: none;
+      animation: blobDrift1 20s ease-in-out infinite;
+    }
+    .hero-blob-2 {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(30,136,216,.1), transparent 70%);
+      pointer-events: none;
+      animation: blobDrift2 25s ease-in-out infinite;
+    }
+    .hero-blob-3 {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244,194,13,.06), transparent 70%);
+      pointer-events: none;
+      animation: blobDrift3 22s ease-in-out infinite;
+    }
+
+    @keyframes blobDrift1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(18px, -14px) scale(1.05); }
+      66% { transform: translate(-10px, 12px) scale(0.97); }
+    }
+    @keyframes blobDrift2 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(-20px, 10px) scale(1.08); }
+    }
+    @keyframes blobDrift3 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      40% { transform: translate(15px, 18px) scale(0.95); }
+      80% { transform: translate(-8px, -6px) scale(1.04); }
+    }
+
+    /* Hero photo entrance */
+    .hero-photo-wrapper {
+      opacity: 0;
+      transform: translateY(30px) scale(0.97);
+      animation: heroPhotoIn 1s cubic-bezier(.22,1,.36,1) forwards;
+      animation-delay: .25s;
+    }
+    @keyframes heroPhotoIn {
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* Hero photo glow */
+    .hero-photo-glow {
+      position: absolute;
+      inset: -20px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, rgba(11,143,77,.15), rgba(30,136,216,.08) 40%, transparent 70%);
+      pointer-events: none;
+      animation: glowPulse 6s ease-in-out infinite;
+    }
+    @keyframes glowPulse {
+      0%, 100% { opacity: .5; transform: scale(1); }
+      50% { opacity: .8; transform: scale(1.04); }
+    }
+
+    /* Hero photo gentle float relative to the square */
+    @keyframes heroPhotoFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    .hero-photo-float {
+      animation: heroPhotoFloat 5s ease-in-out infinite;
+    }
+
+    /* Trust bar institutional */
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.06);
+      transition: background .3s ease, transform .3s ease;
+    }
+    .trust-item:hover {
+      background: rgba(255,255,255,.12);
+      transform: translateY(-2px);
+    }
+    .trust-item-icon {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .trust-item-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255,255,255,.85);
+      line-height: 1.2;
+    }
+
+    /* Security trust area */
+    .security-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .security-item .security-icon {
+      width: 16px;
+      height: 16px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+    .security-item .security-text {
+      font-size: 13px;
+      color: rgba(255,255,255,.7);
+      line-height: 1.5;
+    }
+
+    /* Service Card */
+    .service-card {
+      border-top: 6px solid #1E88D8;
+      transition: transform .3s cubic-bezier(.4,0,.2,1), box-shadow .3s ease, border-color .3s ease;
+      position: relative;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(135deg, rgba(30,136,216,.06), transparent 60%);
+      opacity: 0;
+      transition: opacity .3s ease;
+      pointer-events: none;
+    }
+    .service-card:hover::after { opacity: 1; }
+    .service-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(18,59,122,.15);
+    }
+    .service-card:hover .card-icon {
+      animation: iconBounce .5s ease;
+    }
+    @keyframes iconBounce {
+      0%, 100% { transform: scale(1); }
+      40% { transform: scale(1.25); }
+      60% { transform: scale(0.95); }
+    }
+
+    /* Accordion */
+    .accordion-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s cubic-bezier(.4,0,.2,1);
+      padding: 0 20px;
+    }
+    .accordion-item.open .accordion-answer {
+      max-height: 300px;
+      padding: 4px 20px 20px;
+    }
+    .accordion-item.open .chevron { transform: rotate(180deg); }
+    .accordion-item.open { border-color: #1E88D8; background: rgba(30,136,216,.03); }
+    .chevron { transition: transform .3s ease; }
+
+    /* Benefit Item */
+    .benefit-item {
+      transition: transform .3s cubic-bezier(.4,0,.2,1), box-shadow .3s ease, background .3s ease;
+    }
+    .benefit-item:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(11,143,77,.12);
+      background: #F0FBF4;
+    }
+    .benefit-item:hover .benefit-icon {
+      animation: benefitPop .4s ease;
+    }
+    @keyframes benefitPop {
+      0%, 100% { transform: scale(1) rotate(0); }
+      50% { transform: scale(1.3) rotate(-8deg); }
+    }
+
+
+    /* Focus */
+    /* Testimonial Card */
+    .testimonial-card {
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 32px rgba(18,59,122,.1);
+    }
+
+    /* Focus */
+    button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+      outline: 3px solid #F4C20D;
+      outline-offset: 3px;
+    }
+
+    /* Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Stagger children */
+    .stagger-children .reveal:nth-child(1) { transition-delay: .05s; }
+    .stagger-children .reveal:nth-child(2) { transition-delay: .12s; }
+    .stagger-children .reveal:nth-child(3) { transition-delay: .19s; }
+    .stagger-children .reveal:nth-child(4) { transition-delay: .26s; }
+    .stagger-children .reveal:nth-child(5) { transition-delay: .33s; }
+
+    /* Floating animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .float-anim { animation: float 4s ease-in-out infinite; }
+
+    /* Pulse glow */
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(30,136,216,.3); }
+      50% { box-shadow: 0 0 0 12px rgba(30,136,216,0); }
+    }
+    .pulse-glow { animation: pulseGlow 2.5s ease-in-out infinite; }
+
+    /* Step number animation */
+    .step-circle {
+      transition: transform .4s cubic-bezier(.4,0,.2,1), box-shadow .4s ease, background .3s ease;
+      position: relative;
+      z-index: 2;
+    }
+    .step-circle:hover {
+      transform: scale(1.15);
+      box-shadow: 0 10px 30px rgba(18,59,122,.25);
+    }
+
+    /* Mobile menu */
+    #mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease;
+    }
+    #mobile-menu.open {
+      max-height: 400px;
+    }
+
+    /* Contact form */
+    .form-input {
+      width: 100%;
+      border-radius: 10px;
+      border: 1.5px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.08);
+      padding: 14px 14px 14px 42px;
+      color: white;
+      font-size: 15px;
+      transition: border-color .3s ease, background .3s ease, box-shadow .3s ease;
+      outline: none;
+    }
+    .form-input:focus {
+      border-color: rgba(244,194,13,.5);
+      background: rgba(255,255,255,.12);
+      box-shadow: 0 0 0 3px rgba(244,194,13,.1);
+    }
+    .form-input::placeholder { color: rgba(255,255,255,.4); }
+    .form-select {
+      width: 100%;
+      border-radius: 10px;
+      border: 1.5px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.08);
+      padding: 14px 14px 14px 42px;
+      color: rgba(255,255,255,.6);
+      font-size: 15px;
+      transition: border-color .3s ease, background .3s ease, box-shadow .3s ease;
+      outline: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,.4)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      cursor: pointer;
+    }
+    .form-select:focus {
+      border-color: rgba(244,194,13,.5);
+      background: rgba(255,255,255,.12);
+      box-shadow: 0 0 0 3px rgba(244,194,13,.1);
+    }
+    .form-select option { color: #1A2845; background: white; }
+    .form-textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1.5px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.08);
+      padding: 14px 14px 14px 42px;
+      color: white;
+      font-size: 15px;
+      transition: border-color .3s ease, background .3s ease, box-shadow .3s ease;
+      outline: none;
+      resize: vertical;
+      min-height: 100px;
+    }
+    .form-textarea:focus {
+      border-color: rgba(244,194,13,.5);
+      background: rgba(255,255,255,.12);
+      box-shadow: 0 0 0 3px rgba(244,194,13,.1);
+    }
+    .form-textarea::placeholder { color: rgba(255,255,255,.4); }
+    .form-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      color: rgba(255,255,255,.35);
+      pointer-events: none;
+    }
+    .form-icon-top {
+      position: absolute;
+      left: 14px;
+      top: 16px;
+      width: 18px;
+      height: 18px;
+      color: rgba(255,255,255,.35);
+      pointer-events: none;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #F5F7FA; }
+    ::-webkit-scrollbar-thumb { background: #1E88D8; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #123B7A; }
+
+    /* Movimento Section */
+    @keyframes scrollBelt {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes ping-slow {
+      0% { transform: scale(1); opacity: .6; }
+      50% { transform: scale(1.15); opacity: .3; }
+      100% { transform: scale(1); opacity: .6; }
+    }
+    @keyframes avatarIn {
+      0% { opacity: 0; transform: scale(0) translateY(20px); }
+      60% { transform: scale(1.1) translateY(-2px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    @keyframes lineDraw {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseDot {
+      0%, 100% { opacity: .4; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+    .avatar-dot {
+      animation: pulseDot 2s ease-in-out infinite;
+    }
+    .avatar-dot-fast {
+      animation: pulseDot 1.5s ease-in-out infinite;
+    }
+    .glass-card {
+      cursor: default;
+    }
+    .glass-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,.15);
+    }
+    @keyframes trustBob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    .trust-item {
+      animation: trustBob 3s ease-in-out infinite;
+      will-change: transform;
+    }
+    .trust-item:nth-child(2) { animation-delay: .4s; }
+    .trust-item:nth-child(3) { animation-delay: .8s; }
+    .trust-item:nth-child(4) { animation-delay: 1.2s; }
+    .trust-item:nth-child(5) { animation-delay: 1.6s; }
+
+    /* Live Feed Popups */
+    @keyframes feedIn {
+      0% { opacity: 0; transform: translateX(60px) scale(.9); }
+      60% { transform: translateX(-4px) scale(1.01); }
+      100% { opacity: 1; transform: translateX(0) scale(1); }
+    }
+    @keyframes feedOut {
+      0% { opacity: 1; transform: translateX(0) scale(1); }
+      100% { opacity: 0; transform: translateX(40px) scale(.95); }
+    }
+    .feed-popup {
+      animation: feedIn .45s cubic-bezier(.34,1.56,.64,1) forwards;
+      pointer-events: auto;
+    }
+    .feed-popup.removing {
+      animation: feedOut .3s ease forwards;
+    }
+
+    /* Cookie Bar */
+    #cookie-bar.show {
+      transform: translateY(0);
+    }
+
+    /* Quiz Overlay */
+    #quiz-overlay.show {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+
+    /* Policy Modal */
+    #policy-overlay.show {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    #policy-overlay .policy-section h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #123B7A;
+      margin-top: 1.25rem;
+      margin-bottom: .4rem;
+    }
+    #policy-overlay .policy-section p,
+    #policy-overlay .policy-section li {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(26,40,69,.75);
+    }
+    #policy-overlay .policy-section ul {
+      padding-left: 1.25rem;
+      list-style: disc;
+    }
+    #policy-overlay .policy-section li {
+      margin-bottom: .25rem;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 767px) {
+      .top-stripe { height: 4px; }
+      .hero-orb { width: 280px; height: 280px; right: -150px; top: -70px; }
+      .service-card { text-align: center; }
+      .service-card svg { margin-left: auto; margin-right: auto; }
+      .step-mobile-grid {
+        display: grid;
+        grid-template-columns: 52px 1fr;
+        column-gap: 14px;
+        text-align: left;
+        align-items: center;
+      }
+      .step-mobile-grid .step-content { grid-column: 2; }
+      .hero-blob-1, .hero-blob-2, .hero-blob-3 { display: none; }
+      .hero-photo-glow { display: none; }
+      .hero-photo-wrapper { min-height: 280px !important; }
+      .hero-photo-float > div:first-child { display: none; }
+      #inicio > div { padding-top: 100px !important; padding-bottom: 40px !important; }
+    }
+
+    /* Logo pulse on hover */
+    .logo-link { transition: transform .3s ease; }
+    .logo-link:hover { transform: scale(1.05); }
+
+    /* CTA button */
+    @keyframes btnGlow {
+      0%, 100% { box-shadow: 0 4px 18px rgba(11,143,77,.25); }
+      50% { box-shadow: 0 6px 30px rgba(11,143,77,.45); }
+    }
+    .btn-hero {
+      transition: transform .3s cubic-bezier(.34,1.56,.64,1), box-shadow .3s ease;
+      animation: btnGlow 3s ease-in-out infinite;
+    }
+    .btn-hero:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(11,143,77,.5);
+    }
+
+    /* FAQ item hover */
+    .accordion-item {
+      transition: transform .2s ease, border-color .3s ease, background .3s ease;
+    }
+    .accordion-item:hover {
+      transform: translateX(4px);
+    }
+
+    /* Section title underline */
+    .section-title {
+      position: relative;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #1E88D8, #0B8F4D);
+      transition: width .5s cubic-bezier(.4,0,.2,1);
+    }
+    .reveal.visible .section-title::after,
+    .section-title.visible::after {
+      width: 100%;
+    }
+
+    /* Hero animated shapes — subtle slow movement */
+    .hero-shape-1 { animation: heroFloat1 14s ease-in-out infinite; }
+    .hero-shape-2 { animation: heroFloat2 16s ease-in-out infinite; }
+    .hero-shape-3 { animation: heroFloat3 12s ease-in-out infinite; }
+    .hero-shape-4 { animation: heroFloat4 18s ease-in-out infinite; }
+    .hero-shape-5 { animation: heroFloat5 15s ease-in-out infinite; }
+
+    @keyframes heroFloat1 {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.5; }
+      50% { transform: translate(10px, -14px) rotate(10deg); opacity: 0.8; }
+    }
+    @keyframes heroFloat2 {
+      0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+      50% { transform: translate(-12px, 10px) scale(1.08); opacity: 0.7; }
+    }
+    @keyframes heroFloat3 {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.5; }
+      50% { transform: translate(8px, 12px) rotate(-12deg); opacity: 0.8; }
+    }
+    @keyframes heroFloat4 {
+      0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+      50% { transform: translate(-6px, -10px) scale(1.1); opacity: 0.7; }
+    }
+    @keyframes heroFloat5 {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.5; }
+      50% { transform: translate(14px, -8px) rotate(15deg); opacity: 0.8; }
+    }
+
+    /* WhatsApp Floating Button */
+    #whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+    }
+    #whatsapp-float a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      box-shadow: 0 6px 20px rgba(37,211,102,.4);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    #whatsapp-float a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 28px rgba(37,211,102,.55);
+    }
+
+    /* WhatsApp balloon — consultant style */
+    #whatsapp-balloon {
+      position: fixed;
+      bottom: 96px;
+      right: 24px;
+      z-index: 9998;
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      width: 290px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.15);
+      display: none;
+      transform-origin: bottom right;
+    }
+    #whatsapp-balloon.show {
+      display: block;
+      animation: balloonPop .4s cubic-bezier(.34,1.56,.64,1) forwards;
+    }
+    #whatsapp-balloon.hide {
+      animation: balloonFade .2s ease forwards;
+    }
+    @keyframes balloonPop {
+      0% { opacity: 0; transform: scale(.5); }
+      70% { transform: scale(1.08); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes balloonFade {
+      to { opacity: 0; transform: scale(.8); }
+    }
+    #whatsapp-balloon::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      right: 24px;
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid white;
+    }
+    .balloon-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #999;
+      font-size: 18px;
+      padding: 4px;
+      line-height: 1;
+    }
+    .balloon-close:hover { color: #333; }
+
+    /* Modal */
+    #offer-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(0,0,0,.5);
+      backdrop-filter: blur(4px);
+    }
+    #offer-modal.show { display: flex; }
+    #offer-modal .modal-box {
+      background: white;
+      border-radius: 20px;
+      max-width: 440px;
+      width: 100%;
+      padding: 32px 28px 24px;
+      box-shadow: 0 24px 64px rgba(0,0,0,.25);
+      animation: modalIn .35s cubic-bezier(.22,1,.36,1) forwards;
+      position: relative;
+    }
+    @keyframes modalIn {
+      0% { opacity: 0; transform: translateY(30px) scale(.95); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #F5F7FA;
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #666;
+      font-size: 18px;
+      transition: background .2s ease;
+    }
+    .modal-close:hover { background: #E5E7EB; }
+
+    @media (max-width: 767px) {
+      #whatsapp-float { bottom: 16px; right: 16px; }
+      #whatsapp-float a { width: 52px; height: 52px; }
+      #whatsapp-balloon { bottom: 80px; right: 16px; width: 270px; }
+      #offer-modal .modal-box { padding: 24px 20px 20px; }
+    }
+  </style>
+</head>
+<body class="w-full bg-white">
+
+  <!-- Top Stripe -->
+  <div class="top-stripe"></div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white shadow-sm">
+    <div class="w-full max-w-7xl mx-auto px-5 py-1">
+      <div class="flex items-center justify-between gap-3">
+        <a href="#inicio" aria-label="Ir para o início" class="shrink-0 logo-link">
+          <img
+            src="logo.png"
+            alt="Descomplimei — Contabilidade Popular para MEI"
+            class="h-[50px] md:h-[60px] w-auto object-contain mix-blend-multiply"
+            loading="eager"
+          >
+        </a>
+        <nav aria-label="Navegação principal" class="hidden lg:flex items-center gap-5">
+          <a class="text-sm font-semibold hover:text-blue-600 transition-colors" href="#servicos">Serviços</a>
+          <a class="text-sm font-semibold hover:text-blue-600 transition-colors" href="#como-funciona">Como funciona</a>
+          <a class="text-sm font-semibold hover:text-blue-600 transition-colors" href="#sobre">Sobre</a>
+          <a class="text-sm font-semibold hover:text-blue-600 transition-colors" href="#faq">Dúvidas frequentes</a>
+          <a class="text-sm font-semibold hover:text-blue-600 transition-colors" href="#contato">Contato</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <form id="search-form" class="hidden md:flex items-center rounded-lg border border-slate-300 bg-gray-50 px-3 py-2 w-56 lg:w-64" role="search">
+            <label for="site-search" class="sr-only">Buscar dúvidas sobre MEI</label>
+            <input id="site-search" class="w-full border-0 bg-transparent text-sm outline-none" type="search" placeholder="Buscar dúvidas...">
+            <button type="submit" aria-label="Buscar">
+              <i data-lucide="search" class="w-4 h-4 text-azul/60"></i>
+            </button>
+          </form>
+          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-1.5 rounded-lg bg-verde px-3.5 py-2 text-xs font-bold text-white transition-all hover:bg-verde/90 shadow-sm" aria-label="Fale conosco pelo WhatsApp">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span class="hidden lg:inline">WhatsApp</span>
+          </a>
+          <button id="menu-button" type="button" class="lg:hidden rounded-md p-2 text-azul" aria-label="Abrir menu" aria-expanded="false">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+      <nav id="mobile-menu" aria-label="Navegação móvel" class="lg:hidden">
+        <div class="grid gap-3 border-t border-slate-200 pt-4 mt-2">
+          <a class="font-semibold hover:text-blue-600 transition-colors" href="#servicos" onclick="closeMobileMenu()">Serviços</a>
+          <a class="font-semibold hover:text-blue-600 transition-colors" href="#como-funciona" onclick="closeMobileMenu()">Como funciona</a>
+          <a class="font-semibold hover:text-blue-600 transition-colors" href="#sobre" onclick="closeMobileMenu()">Sobre</a>
+          <a class="font-semibold hover:text-blue-600 transition-colors" href="#faq" onclick="closeMobileMenu()">Dúvidas frequentes</a>
+          <a class="font-semibold hover:text-blue-600 transition-colors" href="#contato" onclick="closeMobileMenu()">Contato</a>
+          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-lg bg-verde px-4 py-2.5 text-sm font-bold text-white transition-all hover:bg-verde/90 mt-2" onclick="closeMobileMenu()">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Fale conosco no WhatsApp
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="relative overflow-hidden" style="background: linear-gradient(135deg, #123B7A 0%, #1E88D8 100%);">
+      <div class="hero-orb"></div>
+      <div class="hero-blob-1" style="bottom: 10%; left: 5%;"></div>
+      <div class="hero-blob-2" style="top: 15%; right: 25%;"></div>
+      <div class="hero-blob-3" style="bottom: 8%; right: 10%;"></div>
+
+      <div class="w-full max-w-7xl mx-auto px-5 relative py-16 lg:py-20 xl:py-24">
+        <div class="grid lg:grid-cols-2 items-center gap-10 xl:gap-16">
+          <div class="reveal">
+            <h1 class="max-w-2xl font-extrabold leading-none">
+              <span class="block text-white" style="font-size: clamp(2rem, 5vw, 2.8rem); letter-spacing: -.02em;">Contabilidade</span>
+              <span class="popular-word block" style="font-size: clamp(3rem, 9vw, 4.8rem); letter-spacing: .06em; line-height: 1.05;">POPULAR</span>
+            </h1>
+            <p class="mt-6 max-w-xl leading-relaxed text-white/90" style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.7;">
+              Regularize, abra ou encerre seu MEI com orientação clara, atendimento humanizado e preço acessível.
+            </p>
+            <p class="mt-3 flex items-center gap-2 text-white/70" style="font-size: clamp(0.9rem, 1.5vw, 1rem);">
+              <i data-lucide="message-circle" class="w-4 h-4 shrink-0 text-verde"></i>
+              Acompanhamos todo o processo pelo WhatsApp, do início ao fim.
+            </p>
+            <a
+              class="hero-cta btn-hero mt-8 inline-flex items-center gap-2 rounded-lg px-7 py-4 font-bold shadow-lg"
+              href="#"
+              style="background: #0B8F4D; color: white; font-size: 18px;"
+            >
+              Falar com um Especialista
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+            <div class="mt-8 grid gap-2 sm:grid-cols-2">
+              <div class="security-item">
+                <i data-lucide="shield-check" class="security-icon text-green-300"></i>
+                <span class="security-text">Seus documentos são tratados com total sigilo</span>
+              </div>
+              <div class="security-item">
+                <i data-lucide="badge-check" class="security-icon text-blue-300"></i>
+                <span class="security-text">Atendimento realizado por especialistas</span>
+              </div>
+              <div class="security-item">
+                <i data-lucide="clipboard-list" class="security-icon text-green-300"></i>
+                <span class="security-text">Processo acompanhado do início ao fim</span>
+              </div>
+              <div class="security-item">
+                <i data-lucide="message-circle" class="security-icon text-green-300"></i>
+                <span class="security-text">Atualizações constantes pelo WhatsApp</span>
+              </div>
+              <div class="security-item sm:col-span-2">
+                <i data-lucide="lock" class="security-icon text-yellow-300"></i>
+                <span class="security-text">Dados utilizados exclusivamente para execução do serviço</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex flex-col items-center" style="transition-delay: .12s;">
+            <div class="absolute -top-6 -left-6 w-20 h-20 rounded-xl bg-white/10 hero-shape-1"></div>
+            <div class="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-white/10 hero-shape-2"></div>
+            <div class="absolute top-1/2 -left-8 w-12 h-12 rounded-lg bg-white/10 hero-shape-3"></div>
+            <div class="absolute -top-3 right-10 w-10 h-10 rounded-full bg-white/10 hero-shape-4"></div>
+            <div class="absolute bottom-8 -left-3 w-14 h-14 rounded-xl bg-white/10 hero-shape-5"></div>
+            <div class="hero-photo-glow"></div>
+            <div class="hero-photo-float relative">
+              <div class="absolute -inset-5 rounded-[2rem] border border-white/20"></div>
+              <div class="hero-photo-wrapper relative mx-auto h-full min-h-[520px] w-full max-w-xl rounded-[1.6rem] overflow-hidden">
+                <img src="resolvendo-whatsapp.png" alt="Cliente resolvendo MEI pelo WhatsApp com Descomplimei" class="w-full h-full object-cover rounded-[1.6rem]" loading="lazy" />
+                <div class="absolute bottom-2 left-2 right-2 flex items-center justify-center gap-3 rounded-xl border border-white/20 bg-white/[.08] px-4 py-2.5 backdrop-blur-md">
+                  <img src="https://barra.sistema.gov.br/v1/assets/govbr.webp" alt="Governo Federal" class="h-6 w-auto opacity-80" />
+                  <p class="text-[11px] text-white/80 leading-snug">Operações pelo <strong class="text-white">Portal do Empreendedor (gov.br)</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="w-full" style="background: linear-gradient(180deg, #123B7A 0%, #0f2f63 100%);">
+      <div class="w-full max-w-7xl mx-auto px-5 pt-5 pb-5">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-3 stagger-children">
+          <div class="reveal trust-item">
+            <div class="trust-item-icon">
+              <i data-lucide="shield-check" class="w-full h-full text-green-300"></i>
+            </div>
+            <span class="trust-item-label">Dados protegidos</span>
+          </div>
+          <div class="reveal trust-item">
+            <div class="trust-item-icon">
+              <i data-lucide="heart-handshake" class="w-full h-full text-green-300"></i>
+            </div>
+            <span class="trust-item-label">Atendimento humanizado</span>
+          </div>
+          <div class="reveal trust-item">
+            <div class="trust-item-icon">
+              <i data-lucide="clipboard-list" class="w-full h-full text-blue-300"></i>
+            </div>
+            <span class="trust-item-label">Processo acompanhado</span>
+          </div>
+          <div class="reveal trust-item">
+            <div class="trust-item-icon">
+              <i data-lucide="message-circle" class="w-full h-full text-green-300"></i>
+            </div>
+            <span class="trust-item-label">Atualizações pelo WhatsApp</span>
+          </div>
+          <div class="reveal trust-item">
+            <div class="trust-item-icon">
+              <i data-lucide="map-pin" class="w-full h-full text-yellow-300"></i>
+            </div>
+            <span class="trust-item-label">Atendimento em todo Brasil</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="servicos" class="w-full py-16 lg:py-20" style="background: #F5F7FA;">
+      <div class="w-full max-w-7xl mx-auto px-5">
+        <div class="max-w-2xl reveal">
+          <p class="font-bold uppercase tracking-widest text-sm text-azul/60">Soluções para o seu negócio</p>
+          <h2 class="mt-2 font-extrabold text-azul" style="font-size: 27px;">Serviços</h2>
+          <p class="mt-3 text-texto/70">Escolha o serviço ideal para regularizar, abrir ou manter seu MEI em ordem.</p>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4 stagger-children">
+          <article class="service-card reveal rounded-xl bg-white p-6 shadow-sm flex flex-col">
+            <div class="card-icon mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-azul/10">
+              <i data-lucide="file-check" class="w-7 h-7 text-azul"></i>
+            </div>
+            <h3 class="font-bold text-azul" style="font-size: 21px;">Regularização</h3>
+            <p class="mt-2 text-sm leading-relaxed text-texto/70 flex-1">Coloque seu MEI em ordem. Levantamento completo da situação, parcelamento de DAS atrasado e regularização junto à Receita Federal.</p>
+            <p class="mt-4 font-extrabold text-verde" style="font-size: 26px;">R$ 79,90</p>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li class="flex items-center gap-2"><span class="text-verde font-bold">✓</span> Levantamento completo</li>
+              <li class="flex items-center gap-2"><span class="text-verde font-bold">✓</span> Regularização</li>
+              <li class="flex items-center gap-2"><span class="text-verde font-bold">✓</span> Parcelamento DAS incluso</li>
+            </ul>
+            <a href="#contato" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-verde px-4 py-3 text-sm font-bold text-white transition-all duration-200 hover:bg-verde/90 hover:-translate-y-0.5 shadow-md">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              Contratar Agora
+            </a>
+          </article>
+
+          <article class="service-card reveal rounded-xl bg-white p-6 shadow-sm flex flex-col">
+            <div class="card-icon mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-claro/10">
+              <i data-lucide="circle-x" class="w-7 h-7 text-claro"></i>
+            </div>
+            <h3 class="font-bold text-azul" style="font-size: 21px;">Encerramento</h3>
+            <p class="mt-2 text-sm leading-relaxed text-texto/70 flex-1">Encerre seu MEI com segurança. Conduzimos todo o processo de baixa para que você finalize sua atividade sem pendências.</p>
+            <p class="mt-4 font-extrabold text-verde" style="font-size: 26px;">R$ 49,90</p>
+            <p class="mt-2 text-xs text-texto/60">Clientes que regularizaram conosco: R$ 9,90</p>
+            <a href="#contato" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-verde px-4 py-3 text-sm font-bold text-white transition-all duration-200 hover:bg-verde/90 hover:-translate-y-0.5 shadow-md">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              Contratar Agora
+            </a>
+          </article>
+
+          <article class="service-card reveal rounded-xl bg-white p-6 shadow-sm flex flex-col">
+            <div class="card-icon mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-verde/10">
+              <i data-lucide="plus-circle" class="w-7 h-7 text-verde"></i>
+            </div>
+            <h3 class="font-bold text-azul" style="font-size: 21px;">Abertura</h3>
+            <p class="mt-2 text-sm leading-relaxed text-texto/70 flex-1">Abra seu MEI de forma gratuita e descomplicada. Orientação completa sobre documentos, regime tributário e obrigações mensais.</p>
+            <p class="mt-4 font-extrabold text-verde" style="font-size: 26px;">Gratuita</p>
+            <p class="mt-2 text-xs text-texto/60">Mediante permanência mínima de 3 meses no Plano MEI em Ordem.</p>
+            <a href="#contato" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-verde px-4 py-3 text-sm font-bold text-white transition-all duration-200 hover:bg-verde/90 hover:-translate-y-0.5 shadow-md">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              Contratar Agora
+            </a>
+          </article>
+
+          <article class="service-card reveal rounded-xl bg-white p-6 shadow-sm flex flex-col relative">
+            <span class="absolute -top-3 right-3 bg-verde text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg z-10">★ Mais vendido</span>
+            <div class="card-icon mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-amarelo/20">
+              <i data-lucide="flag" class="w-7 h-7 text-verde"></i>
+            </div>
+            <h3 class="font-bold text-azul" style="font-size: 21px;">Plano MEI em Ordem</h3>
+            <p class="mt-2 text-sm leading-relaxed text-texto/70 flex-1">Mantenha seu MEI em dia sem preocupações. DAS mensal, declaração anual, lembretes e suporte contínuo.</p>
+            <p class="mt-4 font-extrabold text-verde" style="font-size: 24px;">R$ 109,90/mês</p>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li class="flex items-center gap-2"><span class="text-verde font-bold">✓</span> DAS mensal incluso</li>
+              <li class="flex items-center gap-2"><span class="text-verde font-bold">✓</span> Declaração anual</li>
+              <li class="flex items-center gap-2"><span class="text-verde font-bold">✓</span> Lembretes e suporte</li>
+              <li class="flex items-center gap-2"><span class="text-verde font-bold">✓</span> Acompanhamento</li>
+            </ul>
+            <a href="#contato" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-verde px-4 py-3 text-sm font-bold text-white transition-all duration-200 hover:bg-verde/90 hover:-translate-y-0.5 shadow-md">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              Contratar Agora
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="w-full bg-white py-16 lg:py-20">
+      <div class="w-full max-w-7xl mx-auto px-5">
+        <div class="text-center reveal">
+          <p class="font-bold uppercase tracking-widest text-sm text-verde">Atendimento simples</p>
+          <h2 class="mt-2 font-extrabold text-azul" style="font-size: 27px;">Como funciona</h2>
+          <p class="mt-3 text-texto/70">Em 5 passos simples, seu MEI fica em ordem.</p>
+        </div>
+        <ol class="mt-12 grid gap-6 md:grid-cols-5 stagger-children relative">
+          <li class="text-center reveal">
+            <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-azul text-2xl font-extrabold text-white step-circle pulse-glow">
+              1
+            </div>
+            <div class="step-content mt-4 text-center md:text-center">
+              <h3 class="text-xl font-bold">Você entra em contato</h3>
+              <p class="mt-2 text-sm text-texto/70">Pelo WhatsApp ou formulário.</p>
+            </div>
+          </li>
+          <li class="text-center reveal">
+            <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-claro text-2xl font-extrabold text-white step-circle pulse-glow" style="animation-delay: .3s;">
+              2
+            </div>
+            <div class="step-content mt-4 text-center md:text-center">
+              <h3 class="text-xl font-bold">Analisamos seu caso</h3>
+              <p class="mt-2 text-sm text-texto/70">Entendemos a situação do seu MEI.</p>
+            </div>
+          </li>
+          <li class="text-center reveal">
+            <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-verde text-2xl font-extrabold text-white step-circle pulse-glow" style="animation-delay: .6s;">
+              3
+            </div>
+            <div class="step-content mt-4 text-center md:text-center">
+              <h3 class="text-xl font-bold">Enviamos a solução</h3>
+              <p class="mt-2 text-sm text-texto/70">Melhor proposta para seu caso.</p>
+            </div>
+          </li>
+          <li class="text-center reveal">
+            <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-amarelo text-2xl font-extrabold text-azul step-circle pulse-glow" style="animation-delay: .9s;">
+              4
+            </div>
+            <div class="step-content mt-4 text-center md:text-center">
+              <h3 class="text-xl font-bold">Executamos o serviço</h3>
+              <p class="mt-2 text-sm text-texto/70">Tudo resolvido com agilidade.</p>
+            </div>
+          </li>
+          <li class="text-center reveal">
+            <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-azul text-2xl font-extrabold text-white step-circle pulse-glow" style="animation-delay: 1.2s;">
+              5
+            </div>
+            <div class="step-content mt-4 text-center md:text-center">
+              <h3 class="text-xl font-bold">Acompanhe pelo WhatsApp</h3>
+              <p class="mt-2 text-sm text-texto/70">Suporte contínuo do início ao fim.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Movimento -->
+    <section id="movimento" class="relative w-full overflow-hidden pb-16 pt-16 lg:pb-20 lg:pt-20" style="background: linear-gradient(160deg, #0a2463 0%, #123B7A 30%, #1b5fa5 60%, #1E88D8 100%);">
+      <div class="absolute inset-0 opacity-[.04] pointer-events-none" style="background-image: radial-gradient(circle at 25px 25px, #fff 1px, transparent 0); background-size: 50px 50px;"></div>
+      <div class="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-claro opacity-[.06] blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-1/4 -right-32 w-80 h-80 rounded-full bg-verde opacity-[.05] blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 flex flex-col justify-center px-6 md:px-10 py-10 lg:py-0" style="max-width: 1440px; margin: 0 auto;">
+        <div class="grid items-center gap-14 lg:grid-cols-[1fr_1fr] lg:gap-20">
+          <div class="reveal">
+            <p class="text-xs font-bold uppercase tracking-[.2em] text-verde">Descomplimei</p>
+            <h2 class="mt-3 text-3xl font-extrabold leading-tight text-white lg:text-4xl xl:text-5xl">Todos os dias ajudamos novos MEIs a ficarem em dia.</h2>
+            <p class="mt-4 text-lg leading-relaxed text-white/70 lg:text-xl">Atendimento online, seguro e humanizado para empreendedores de todo o Brasil.</p>
+
+            <div class="mt-8 grid grid-cols-2 gap-4" id="glass-grid">
+              <div class="glass-card group relative overflow-hidden rounded-2xl border border-white/[.08] p-5 transition-all duration-300" style="background: rgba(255,255,255,.06); backdrop-filter: blur(12px);">
+                <div class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" style="background: radial-gradient(600px circle at var(--mx,50%) var(--my,50%), rgba(30,136,216,.15), transparent 40%);"></div>
+                <div class="relative z-10">
+                  <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10"><i data-lucide="heart-handshake" class="h-5 w-5 text-white"></i></div>
+                  <p class="mt-3 text-sm font-bold text-white">Atendimento Humanizado</p>
+                  <p class="mt-1 text-xs text-white/50">Suporte próximo e acolhedor</p>
+                </div>
+              </div>
+              <div class="glass-card group relative overflow-hidden rounded-2xl border border-white/[.08] p-5 transition-all duration-300" style="background: rgba(255,255,255,.06); backdrop-filter: blur(12px);">
+                <div class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" style="background: radial-gradient(600px circle at var(--mx,50%) var(--my,50%), rgba(11,143,77,.15), transparent 40%);"></div>
+                <div class="relative z-10">
+                  <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10"><i data-lucide="shield-check" class="h-5 w-5 text-white"></i></div>
+                  <p class="mt-3 text-sm font-bold text-white">Processo Seguro</p>
+                  <p class="mt-1 text-xs text-white/50">Dados protegidos e sigilo</p>
+                </div>
+              </div>
+              <div class="glass-card group relative overflow-hidden rounded-2xl border border-white/[.08] p-5 transition-all duration-300" style="background: rgba(255,255,255,.06); backdrop-filter: blur(12px);">
+                <div class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" style="background: radial-gradient(600px circle at var(--mx,50%) var(--my,50%), rgba(30,136,216,.15), transparent 40%);"></div>
+                <div class="relative z-10">
+                  <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10"><i data-lucide="message-circle" class="h-5 w-5 text-white"></i></div>
+                  <p class="mt-3 text-sm font-bold text-white">Acompanhamento WhatsApp</p>
+                  <p class="mt-1 text-xs text-white/50">Suporte direto e rápido</p>
+                </div>
+              </div>
+              <div class="glass-card group relative overflow-hidden rounded-2xl border border-white/[.08] p-5 transition-all duration-300" style="background: rgba(255,255,255,.06); backdrop-filter: blur(12px);">
+                <div class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" style="background: radial-gradient(600px circle at var(--mx,50%) var(--my,50%), rgba(244,194,13,.1), transparent 40%);"></div>
+                <div class="relative z-10">
+                  <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10"><i data-lucide="zap" class="h-5 w-5 text-white"></i></div>
+                  <p class="mt-3 text-sm font-bold text-white">Processo Simplificado</p>
+                  <p class="mt-1 text-xs text-white/50">Tudo online sem burocracia</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+              <div class="counter-item"><p class="text-2xl font-extrabold text-verde lg:text-3xl"><span class="counter-val" data-target="500">0</span><span class="text-white/70">+</span></p><p class="mt-1 text-xs font-semibold text-white/60">MEIs atendidos</p></div>
+              <div class="counter-item"><p class="text-2xl font-extrabold text-verde lg:text-3xl"><span class="counter-val" data-target="100">0</span><span class="text-white/70">%</span></p><p class="mt-1 text-xs font-semibold text-white/60">Atendimento online</p></div>
+              <div class="counter-item"><p class="text-2xl font-extrabold text-claro lg:text-3xl"><span class="counter-val" data-target="95">0</span><span class="text-white/70">%</span></p><p class="mt-1 text-xs font-semibold text-white/60">Processos concluídos</p></div>
+              <div class="counter-item"><p class="text-2xl font-extrabold text-amarelo lg:text-3xl">Todo</p><p class="mt-1 text-xs font-semibold text-white/60">Brasil</p></div>
+            </div>
+          </div>
+
+          <div class="relative hidden aspect-square lg:block" id="avatar-section">
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full border border-white/[.04]"></div>
+              <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[440px] h-[440px] rounded-full border border-white/[.06]"></div>
+              <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] rounded-full border border-white/[.08]"></div>
+              <div class="relative flex h-28 w-28 items-center justify-center rounded-full shadow-2xl" style="background: linear-gradient(135deg, #1E88D8, #0B8F4D); box-shadow: 0 0 40px rgba(30,136,216,.3), 0 0 80px rgba(11,143,77,.15);">
+                <div class="flex h-24 w-24 items-center justify-center rounded-full bg-white">
+                  <span class="text-2xl font-black tracking-tight" style="background: linear-gradient(135deg, #123B7A, #1E88D8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">D</span>
+                </div>
+                <div class="absolute inset-0 rounded-full animate-ping-slow border-2 border-white/20"></div>
+              </div>
+            </div>
+            <div id="avatars-container" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" style="width:0;height:0;"></div>
+            <svg id="lines-svg" viewBox="-320 -320 640 640" class="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" style="width:640px;height:640px;max-width:none;overflow:visible;"></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 overflow-hidden border-t border-white/[.06] pointer-events-none" style="background: rgba(255,255,255,.03); backdrop-filter: blur(8px);">
+        <div class="flex whitespace-nowrap" style="animation: scrollBelt 40s linear infinite; width: max-content;">
+          <div class="flex gap-8 py-3" style="padding-right: 2rem;">
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-verde/20 text-verde"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Abertura de MEI concluída</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-verde/20 text-verde"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Regularização realizada</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-claro/20 text-claro"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>DAS emitida</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-verde/20 text-verde"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Declaração Anual enviada</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-claro/20 text-claro"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Baixa de MEI concluída</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-verde/20 text-verde"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Alteração cadastral realizada</span>
+          </div>
+          <div class="flex gap-8 py-3" aria-hidden="true" style="padding-right: 2rem;">
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-verde/20 text-verde"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Abertura de MEI concluída</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-verde/20 text-verde"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Regularização realizada</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-claro/20 text-claro"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>DAS emitida</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-verde/20 text-verde"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Declaração Anual enviada</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-claro/20 text-claro"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Baixa de MEI concluída</span>
+            <span class="inline-flex items-center gap-2 text-sm text-white/50"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-verde/20 text-verde"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Alteração cadastral realizada</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Provas Sociais -->
+    <section id="depoimentos" class="w-full py-16 lg:py-20" style="background: #F5F7FA;">
+      <div class="w-full max-w-7xl mx-auto px-5">
+        <div class="text-center reveal">
+          <p class="font-bold uppercase tracking-widest text-sm text-verde">Depoimentos</p>
+          <h2 class="mt-2 font-extrabold text-azul" style="font-size: 27px;">O que nossos clientes dizem</h2>
+          <p class="mt-3 text-texto/70">A satisfação de quem já utilizou nossos serviços.</p>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3 stagger-children">
+          <div class="reveal testimonial-card rounded-xl bg-white p-6 shadow-sm">
+            <div class="flex items-center gap-1 text-yellow-500 mb-3">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-sm leading-relaxed text-texto/80 italic">"Consegui regularizar meu MEI que estava com DAS atrasado. Atendimento rápido e pelo WhatsApp, super prático. Recomendo!"</p>
+            <div class="mt-4 flex items-center gap-3 border-t border-slate-100 pt-4">
+              <div class="flex h-10 w-10 items-center justify-center rounded-full bg-azul/10 text-sm font-bold text-azul">AM</div>
+              <div>
+                <p class="text-sm font-bold text-texto">Ana M.</p>
+                <p class="text-xs text-texto/50">São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+          <div class="reveal testimonial-card rounded-xl bg-white p-6 shadow-sm">
+            <div class="flex items-center gap-1 text-yellow-500 mb-3">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-sm leading-relaxed text-texto/80 italic">"Precisei encerrar meu MEI e não sabia como fazer. A equipe foi super atenciosa e resolveu tudo. Preço justo."</p>
+            <div class="mt-4 flex items-center gap-3 border-t border-slate-100 pt-4">
+              <div class="flex h-10 w-10 items-center justify-center rounded-full bg-claro/10 text-sm font-bold text-claro">CR</div>
+              <div>
+                <p class="text-sm font-bold text-texto">Carlos R.</p>
+                <p class="text-xs text-texto/50">Rio de Janeiro, RJ</p>
+              </div>
+            </div>
+          </div>
+          <div class="reveal testimonial-card rounded-xl bg-white p-6 shadow-sm">
+            <div class="flex items-center gap-1 text-yellow-500 mb-3">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-sm leading-relaxed text-texto/80 italic">"Assinei o Plano MEI em Ordem e não me preocupo mais com declaração. Eles lembram de tudo, melhorou demais minha vida."</p>
+            <div class="mt-4 flex items-center gap-3 border-t border-slate-100 pt-4">
+              <div class="flex h-10 w-10 items-center justify-center rounded-full bg-verde/10 text-sm font-bold text-verde">JS</div>
+              <div>
+                <p class="text-sm font-bold text-texto">Juliana S.</p>
+                <p class="text-xs text-texto/50">Belo Horizonte, MG</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Autoridade -->
+    <section id="sobre" class="w-full bg-white py-16 lg:py-20">
+      <div class="w-full max-w-7xl mx-auto px-5">
+        <div class="text-center reveal">
+          <p class="font-bold uppercase tracking-widest text-sm text-verde">Por que escolher a Descomplimei</p>
+          <h2 class="mt-2 font-extrabold text-azul" style="font-size: 27px;">Autoridade em MEI</h2>
+          <p class="mt-3 text-texto/70">Sabemos como é lidar com as obrigações de um MEI. Por isso, criamos um serviço pensado em você.</p>
+        </div>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 stagger-children">
+          <div class="reveal benefit-item flex gap-4 rounded-xl bg-white p-6 shadow-sm border border-slate-100">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-verde/10">
+              <i data-lucide="heart-handshake" class="benefit-icon h-6 w-6 text-verde"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-texto">Atendimento humano</h3>
+              <p class="mt-1 text-sm text-texto/60">Você fala com pessoas reais, não com robôs. Suporte de verdade quando precisar.</p>
+            </div>
+          </div>
+          <div class="reveal benefit-item flex gap-4 rounded-xl bg-white p-6 shadow-sm border border-slate-100">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-claro/10">
+              <i data-lucide="badge-check" class="benefit-icon h-6 w-6 text-claro"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-texto">Especialistas em MEI</h3>
+              <p class="mt-1 text-sm text-texto/60">Equipe especializada em microempreendedor individual e contabilidade popular.</p>
+            </div>
+          </div>
+          <div class="reveal benefit-item flex gap-4 rounded-xl bg-white p-6 shadow-sm border border-slate-100">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-verde/10">
+              <i data-lucide="zap" class="benefit-icon h-6 w-6 text-verde"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-texto">Processo simplificado</h3>
+              <p class="mt-1 text-sm text-texto/60">Sem burocracia. Você envia os dados e cuidamos de todo o resto.</p>
+            </div>
+          </div>
+          <div class="reveal benefit-item flex gap-4 rounded-xl bg-white p-6 shadow-sm border border-slate-100">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amarelo/20">
+              <i data-lucide="search" class="benefit-icon h-6 w-6 text-azul"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-texto">Transparência</h3>
+              <p class="mt-1 text-sm text-texto/60">Você sabe exatamente o que está sendo feito e quanto custa. Sem surpresas.</p>
+            </div>
+          </div>
+          <div class="reveal benefit-item flex gap-4 rounded-xl bg-white p-6 shadow-sm border border-slate-100">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-verde/10">
+              <i data-lucide="clock" class="benefit-icon h-6 w-6 text-verde"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-texto">Atendimento rápido</h3>
+              <p class="mt-1 text-sm text-texto/60">Respondemos em poucos minutos. Seu tempo é valioso.</p>
+            </div>
+          </div>
+          <div class="reveal benefit-item flex gap-4 rounded-xl bg-white p-6 shadow-sm border border-slate-100">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-verde/10">
+              <i data-lucide="message-circle" class="benefit-icon h-6 w-6 text-verde"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-texto">Suporte via WhatsApp</h3>
+              <p class="mt-1 text-sm text-texto/60">Todo acompanhamento pelo canal mais prático: o WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="w-full py-16 lg:py-20" style="background: #F5F7FA;">
+      <div class="w-full max-w-7xl mx-auto px-5 grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+        <div class="reveal">
+          <p class="font-bold uppercase tracking-widest text-sm text-verde">Vantagens</p>
+          <h2 class="mt-2 font-extrabold text-azul" style="font-size: 27px;">Mais tranquilidade para cuidar do seu MEI</h2>
+          <p class="mt-5 leading-relaxed text-texto" style="font-size: 18px;">Uma solução acessível para manter suas obrigações em dia, com suporte de verdade quando você precisar.</p>
+        </div>
+        <ul class="grid gap-4 sm:grid-cols-2 stagger-children">
+          <li class="reveal benefit-item flex gap-3 rounded-lg bg-white p-5 shadow-sm">
+            <i data-lucide="check-circle-2" class="benefit-icon h-6 w-6 shrink-0 text-verde"></i>
+            <span class="font-semibold">Sem burocracia</span>
+          </li>
+          <li class="reveal benefit-item flex gap-3 rounded-lg bg-white p-5 shadow-sm">
+            <i data-lucide="badge-dollar-sign" class="benefit-icon h-6 w-6 shrink-0 text-verde"></i>
+            <span class="font-semibold">Preço acessível</span>
+          </li>
+          <li class="reveal benefit-item flex gap-3 rounded-lg bg-white p-5 shadow-sm">
+            <i data-lucide="heart-handshake" class="benefit-icon h-6 w-6 shrink-0 text-verde"></i>
+            <span class="font-semibold">Atendimento humanizado</span>
+          </li>
+          <li class="reveal benefit-item flex gap-3 rounded-lg bg-white p-5 shadow-sm">
+            <i data-lucide="wallet-cards" class="benefit-icon h-6 w-6 shrink-0 text-verde"></i>
+            <span class="font-semibold">Parcelamento DAS incluso</span>
+          </li>
+          <li class="reveal benefit-item flex gap-3 rounded-lg bg-white p-5 shadow-sm sm:col-span-2">
+            <i data-lucide="calendar-check-2" class="benefit-icon h-6 w-6 shrink-0 text-verde"></i>
+            <span class="font-semibold">Declaração anual inclusa no Plano MEI em Ordem</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section class="w-full bg-white py-16 lg:py-20">
+      <div class="w-full max-w-7xl mx-auto px-5">
+        <div class="grid gap-12 lg:grid-cols-2 items-center">
+          <div class="reveal">
+            <p class="font-bold uppercase tracking-widest text-sm text-verde">Quem somos</p>
+            <h2 class="mt-2 font-extrabold text-azul" style="font-size: 27px;">Descomplimei — Contabilidade Popular para MEI</h2>
+            <p class="mt-5 leading-relaxed text-texto" style="font-size: 18px; line-height: 1.6;">
+              Nascemos para descomplicar a vida do microempreendedor individual. Sabemos que lidar com burocracia, impostos e obrigações fiscais pode ser desgastante — principalmente para quem toca o próprio negócio.
+            </p>
+            <p class="mt-4 leading-relaxed text-texto" style="font-size: 18px; line-height: 1.6;">
+              Nossa missão é oferecer atendimento acessível, transparente e humanizado para que você possa focar no que realmente importa: fazer seu negócio crescer.
+            </p>
+            <p class="mt-4 leading-relaxed text-texto/70" style="font-size: 16px;">
+              Atendemos empreendedores de todo o Brasil, com suporte via WhatsApp e processo 100% online.
+            </p>
+          </div>
+          <div class="reveal relative" style="transition-delay: .12s;">
+            <div class="rounded-2xl bg-cinza p-4 text-center shadow-sm border border-slate-200 overflow-hidden">
+              <img src="equipe.png" alt="Equipe Descomplimei" class="w-full h-auto rounded-xl" loading="lazy" />
+              <p class="mt-3 text-lg font-bold text-azul">Equipe Comercial Descomplimei *</p>
+              <p class="text-sm text-texto/60">Equipe formada por: Cintia, Rafael, Daniele e Alan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="w-full py-16 lg:py-20" style="background: #F5F7FA;">
+      <div class="w-full max-w-4xl mx-auto px-5">
+        <div class="text-center reveal">
+          <p class="font-bold uppercase tracking-widest text-sm text-verde">Tire suas dúvidas</p>
+          <h2 class="mt-2 font-extrabold text-azul" style="font-size: 27px;">Perguntas frequentes sobre MEI</h2>
+          <p class="mt-4 text-texto" style="font-size: 18px;">Confira respostas para as dúvidas mais comuns sobre MEI e nossos serviços.</p>
+        </div>
+        <div id="faq-list" class="mt-10 space-y-3 stagger-children">
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              O que é MEI e quem pode se formalizar?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              MEI é o Microempreendedor Individual, uma categoria simplificada para quem trabalha por conta própria e fatura até R$ 81.000,00 por ano. Podem se formalizar profissionais autônomos, pequenos comerciantes e prestadores de serviços que não tenham sócios.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Como funciona a regularização do MEI?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              A regularização envolve o levantamento completo da situação do seu MEI, identificação de pendências e a realização dos procedimentos necessários para colocar o CNPJ em dia. Inclui orientação sobre parcelamento de DAS atrasados e envio de declarações em aberto.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Posso parcelar o DAS atrasado?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              Sim. Após a análise da situação do seu MEI, orientamos sobre as possibilidades de parcelamento das pendências junto à Receita Federal. O parcelamento do DAS é uma das formas mais comuns de regularização.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Como faço para encerrar meu MEI?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              Para encerrar o MEI, é necessário dar baixa no CNPJ junto à Receita Federal. Nossa equipe orienta sobre os documentos necessários e conduz todo o processo de forma segura, garantindo que todas as pendências sejam tratadas antes da baixa.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Quanto custa para abrir um MEI?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              A abertura do MEI é gratuita para quem contrata o Plano MEI em Ordem (permanência mínima de 3 meses). Oferecemos orientação completa sobre documentos, regime tributário e obrigações mensais.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              O que está incluso no Plano MEI em Ordem?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              O Plano MEI em Ordem inclui o valor do DAS mensal, declaração anual (DASN-SIMEI), lembretes de vencimento, suporte contínuo e acompanhamento personalizado pelo WhatsApp.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              O que significa CNPJ inapto?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              CNPJ inapto significa que a empresa deixou de cumprir alguma obrigação por um período prolongado e precisa regularizar sua situação junto à Receita Federal. É possível reverter essa situação com a regularização adequada.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Preciso emitir nota fiscal como MEI?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              Sim, o MEI deve emitir nota fiscal quando presta serviços para outras empresas. Para pessoas físicas, a emissão não é obrigatória, mas pode ser solicitada pelo cliente. Cada município tem suas regras específicas.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Qual o prazo para entregar a declaração anual do MEI?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              A declaração anual (DASN-SIMEI) deve ser entregue até o dia 31 de maio de cada ano, referente ao ano anterior. O atraso na entrega gera multa mínima de R$ 50,00.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              O que acontece se eu não pagar o DAS mensal?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              O não pagamento do DAS mensal gera multa e juros por atraso. Se as pendências se acumularem, o CNPJ pode ficar inapto, impedindo a emissão de notas fiscais e o acesso a benefícios previdenciários.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              MEI tem direito a aposentadoria?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              Sim. O MEI que paga o DAS mensalmente contribui para o INSS e tem direito a benefícios previdenciários como aposentadoria por idade, auxílio-doença, salário-maternidade e pensão por morte.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Posso contratar um funcionário sendo MEI?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              Sim, o MEI pode contratar um funcionário, desde que o salário não ultrapasse o piso da categoria ou um salário mínimo. É obrigatório registrar o funcionário e recolher as contribuições trabalhistas.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Não utilizo mais meu MEI, preciso continuar pagando?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              Mesmo sem utilizar o MEI, o DAS mensal continua sendo devido enquanto o CNPJ estiver ativo. A melhor opção é fazer o encerramento formal para evitar acúmulo de débitos.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Quanto custa o serviço de regularização?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              O serviço de regularização custa R$ 79,90, incluindo levantamento completo da situação, orientação especializada e parcelamento de DAS atrasado. Preço acessível para colocar seu MEI em ordem.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Como funciona o atendimento pelo WhatsApp?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              Todo o atendimento é feito pelo WhatsApp. Você envia seus dados, tiramos dúvidas, enviamos propostas e acompanhamos cada etapa do serviço — tudo pelo mesmo canal, de forma prática e rápida.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Quais documentos preciso para regularizar meu MEI?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              Geralmente são necessários: CPF, número do CNPJ, dados de acesso ao Portal do Empreendedor e informações sobre as pendências. Nossa equipe orienta cada documento necessário após a análise inicial.
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Qual o limite de faturamento do MEI?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              O limite de faturamento do MEI é de R$ 81.000,00 por ano (aproximadamente R$ 6.750,00 por mês). Se o faturamento ultrapassar esse limite, pode ser necessário migrar para Microempresa (ME).
+            </div>
+          </article>
+
+          <article class="accordion-item reveal rounded-lg border border-slate-200 bg-white hover:border-claro/40 transition-colors">
+            <button class="faq-toggle flex w-full items-center justify-between gap-4 p-5 text-left font-bold" type="button" aria-expanded="false">
+              Vocês atendem em todo o Brasil?
+              <i data-lucide="chevron-down" class="chevron h-5 w-5 shrink-0 text-azul/50"></i>
+            </button>
+            <div class="accordion-answer leading-relaxed text-texto/80">
+              Sim! Atendemos empreendedores de todo o Brasil de forma 100% online. O processo é feito pelo WhatsApp, sem necessidade de deslocamento. Basta ter acesso à internet.
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="w-full py-16 lg:py-24 overflow-hidden" style="background: #123B7A;">
+      <div class="w-full max-w-7xl mx-auto px-5">
+        <div class="grid items-center gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-12">
+          <!-- Left -->
+          <div class="reveal text-center lg:text-left">
+            <div class="mx-auto lg:mx-0 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-amarelo/20 mb-4">
+              <i data-lucide="message-circle-heart" class="h-6 w-6 text-amarelo"></i>
+            </div>
+            <h2 class="font-extrabold text-white leading-tight" style="font-size: 30px;">Fale com um Especialista</h2>
+            <p class="mt-3 leading-relaxed text-white/70" style="font-size: 16px;">
+              Conte sua situação e descubra a melhor solução para seu MEI. Atendimento rápido e humanizado.
+            </p>
+
+            <!-- Consultant Card -->
+            <div class="mt-6 mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-white/[.04] backdrop-blur-sm">
+              <div class="flex items-center gap-5 p-5">
+                <img src="width-640.png" alt="Cintia — Consultora Descomplimei" class="w-18 h-18 w-[72px] h-[72px] rounded-xl object-cover shadow-lg border-2 border-white/20" loading="lazy" />
+                <div class="text-left">
+                  <p class="text-base font-bold text-white">Cintia</p>
+                  <p class="text-sm text-white/50">Consultora Especialista MEI</p>
+                  <span class="inline-flex items-center gap-1.5 mt-1.5 text-sm text-verde"><span class="w-2 h-2 rounded-full bg-verde animate-pulse"></span>Online agora — resposta em minutos</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 grid grid-cols-2 gap-x-6 gap-y-3">
+              <div class="flex items-center gap-3 text-sm text-white/70">
+                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-verde/20 shrink-0"><i data-lucide="zap" class="h-4 w-4 text-verde"></i></span>
+                <span>Resposta rápida pelo WhatsApp em minutos</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-white/70">
+                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-claro/20 shrink-0"><i data-lucide="shield-check" class="h-4 w-4 text-claro"></i></span>
+                <span>Atendimento 100% online e seguro</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-white/70">
+                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-verde/20 shrink-0"><i data-lucide="clock" class="h-4 w-4 text-verde"></i></span>
+                <span>Suporte de segunda a sexta, 8h às 18h</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-white/70">
+                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-amarelo/20 shrink-0"><i data-lucide="file-text" class="h-4 w-4 text-amarelo"></i></span>
+                <span>Regularização, abertura e encerramento</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right - Form -->
+          <div class="reveal" style="transition-delay:.15s;">
+            <div class="rounded-2xl bg-white/[.06] p-[2px] backdrop-blur-sm shadow-2xl">
+              <div class="rounded-xl bg-white/10 p-6 md:p-8 lg:p-10">
+                <form id="contact-form" novalidate>
+                <div class="mb-6 text-center">
+                  <p class="text-lg font-bold text-white">Solicitar Atendimento</p>
+                  <p class="text-xs text-white/50">Preencha e nossa equipe entrará em contato</p>
+                </div>
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <div class="relative">
+                    <i data-lucide="user" class="form-icon"></i>
+                    <input id="contact-name" name="nome" class="form-input" type="text" required placeholder="Seu nome">
+                  </div>
+                  <div class="relative">
+                    <i data-lucide="phone" class="form-icon"></i>
+                    <input id="contact-phone" name="telefone" class="form-input" type="tel" required placeholder="(00) 00000-0000">
+                  </div>
+                </div>
+                <div class="relative mt-4">
+                  <i data-lucide="briefcase" class="form-icon"></i>
+                  <select id="contact-service" name="servico" class="form-select" required>
+                    <option value="">Selecione um serviço</option>
+                    <option>Regularização</option>
+                    <option>Encerramento</option>
+                    <option>Abertura</option>
+                    <option>Plano MEI em Ordem</option>
+                    <option>Dúvidas</option>
+                  </select>
+                </div>
+                <div class="relative mt-4">
+                  <i data-lucide="edit-3" class="form-icon-top"></i>
+                  <textarea id="contact-message" name="mensagem" class="form-textarea" required placeholder="Conte brevemente sua situação..."></textarea>
+                </div>
+                <button type="submit" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl px-7 py-4 font-bold transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl shadow-lg" style="background: #25D366; color: white; font-size: 16px;">
+                  <i data-lucide="message-circle" class="w-5 h-5"></i>
+                  Falar com a Cintia no WhatsApp
+                </button>
+                <div class="mt-4 flex flex-col items-center gap-2 border-t border-white/10 pt-4">
+                  <p class="text-center text-xs text-white/50 flex items-center gap-1.5">
+                    <i data-lucide="clock" class="w-3.5 h-3.5 shrink-0"></i>
+                    Respondemos em poucos minutos (horário comercial)
+                  </p>
+                  <p class="text-center text-xs text-white/40">Ao enviar, você concorda com nossa <a href="#" onclick="event.preventDefault();openPolicy('privacidade')" class="underline hover:text-white/70 transition-colors">Política de Privacidade</a>.</p>
+                </div>
+                <p id="contact-status" class="mt-3 text-center text-sm font-semibold" aria-live="polite"></p>
+              </form>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-5 px-6 pb-5 pt-3 text-xs text-white/40">
+              <span class="flex items-center gap-1.5"><i data-lucide="lock" class="w-3 h-3"></i> Dados protegidos</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3 h-3"></i> Atendimento oficial</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="globe" class="w-3 h-3"></i> Todo Brasil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-10" style="background: #1A2845;">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid gap-8 md:grid-cols-4 text-left">
+        <div>
+          <img src="logo.png" alt="Descomplimei" class="h-10 w-auto opacity-80 mix-blend-screen mb-4">
+          <p class="text-sm text-white/60 leading-relaxed">Contabilidade Popular para MEI — Regularização, Abertura e Encerramento. Atendimento em todo Brasil.</p>
+          <div class="mt-4 flex items-center gap-2 text-sm text-white/50">
+            <i data-lucide="shield-check" class="w-4 h-4 shrink-0 text-green-400"></i>
+            <span>Atendimento 100% online e seguro</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-3">Serviços</h4>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="#servicos" class="hover:text-white transition-colors">Regularização MEI</a></li>
+            <li><a href="#servicos" class="hover:text-white transition-colors">Abertura MEI</a></li>
+            <li><a href="#servicos" class="hover:text-white transition-colors">Encerramento MEI</a></li>
+            <li><a href="#servicos" class="hover:text-white transition-colors">Plano MEI em Ordem</a></li>
+            <li><a href="#servicos" class="hover:text-white transition-colors">Parcelamento DAS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-3">Institucional</h4>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="#sobre" class="hover:text-white transition-colors">Quem somos</a></li>
+            <li><a href="#como-funciona" class="hover:text-white transition-colors">Como funciona</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Dúvidas frequentes</a></li>
+            <li><a href="#depoimentos" class="hover:text-white transition-colors">Depoimentos</a></li>
+            <li><a href="#" onclick="event.preventDefault();openPolicy('privacidade')" class="hover:text-white transition-colors">Política de Privacidade</a></li>
+            <li><a href="#" onclick="event.preventDefault();openPolicy('termos')" class="hover:text-white transition-colors">Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-3">Contato</h4>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li class="flex items-center gap-2"><i data-lucide="message-circle" class="w-4 h-4 shrink-0 text-green-400"></i> <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp: (00) 00000-0000</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 shrink-0 text-blue-400"></i> contato@descomplimei.com.br</li>
+            <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 shrink-0 text-yellow-400"></i> Brasil</li>
+          </ul>
+          <div class="mt-4 pt-4 border-t border-white/5">
+            <p class="text-xs text-white/30">CNPJ: 00.000.000/0001-00</p>
+            <p class="text-xs text-white/30">Descomplimei Contabilidade Popular Ltda.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-4 rounded-lg border border-white/10 bg-white/[.02] px-5 py-4">
+        <img src="https://barra.sistema.gov.br/v1/assets/govbr.webp" alt="Governo Federal" class="h-8 w-auto opacity-70">
+        <p class="text-xs text-white/50 leading-relaxed max-w-xl text-center">Nossas operações são realizadas por meio do <strong class="text-white/70">Portal do Empreendedor (gov.br)</strong>, garantindo conformidade com as exigências legais e a segurança dos dados dos nossos clientes.</p>
+      </div>
+      <div class="mt-6 border-t border-white/10 pt-6 text-center">
+        <p class="text-sm text-white/40">© 2025 Descomplimei. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <div id="whatsapp-float">
+    <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+  </div>
+
+  <!-- Live Feed Popups -->
+  <div id="live-feed" class="fixed z-40 pointer-events-none" style="top: 100px; right: 20px; width: 300px;"></div>
+
+  <!-- WhatsApp Balloon — Consultora -->
+  <div id="whatsapp-balloon">
+    <button class="balloon-close" id="balloon-close" aria-label="Fechar">✕</button>
+    <div class="flex items-center gap-3 mb-2">
+      <img src="width-640.png" alt="Cintia — Consultora Descomplimei" class="h-10 w-10 rounded-full object-cover border-2 border-verde/20" />
+      <div>
+        <p class="text-sm font-bold text-texto">Cintia — Descomplimei</p>
+        <p class="text-xs text-texto/50">Consultora MEI</p>
+      </div>
+    </div>
+    <p class="text-sm text-texto/80 leading-relaxed">
+      Olá! Vi que você está com dúvidas sobre MEI. <strong>Posso te ajudar agora?</strong> É rápido, simples e seguro 😊
+    </p>
+    <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-verde px-4 py-2.5 text-sm font-bold text-white transition-all hover:bg-verde/90 shadow-md">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      Quero resolver meu MEI
+    </a>
+  </div>
+
+  <!-- Offer Modal -->
+  <div id="offer-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Fechar">✕</button>
+      <div class="text-center">
+        <img src="logo.png" alt="Descomplimei" class="mx-auto h-10 w-auto opacity-80 mb-4" />
+        <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-verde/10 mb-3">
+          <i data-lucide="zap" class="h-8 w-8 text-verde"></i>
+        </div>
+        <h3 class="text-xl font-extrabold text-azul">Oferta Relâmpago ⚡</h3>
+        <p class="mt-2 text-sm text-texto/70 leading-relaxed">
+          Quem chama agora garante <strong>condição especial</strong> no primeiro serviço. Processo rápido, simples e 100% seguro.
+        </p>
+      </div>
+      <div class="mt-5 grid gap-2.5">
+        <div class="flex items-center gap-3 text-sm">
+          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-verde/10 text-xs font-bold text-verde">✓</span>
+          <span class="text-texto/80">Atendimento em <strong>menos de 5 minutos</strong></span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-verde/10 text-xs font-bold text-verde">✓</span>
+          <span class="text-texto/80">Processo <strong>100% online e seguro</strong></span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-verde/10 text-xs font-bold text-verde">✓</span>
+          <span class="text-texto/80"><strong>Preço especial</strong> para novos clientes</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-verde/10 text-xs font-bold text-verde">✓</span>
+          <span class="text-texto/80">Acompanhamento <strong>direto pelo WhatsApp</strong></span>
+        </div>
+      </div>
+      <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg px-5 py-3.5 text-base font-bold text-white transition-all duration-200 hover:-translate-y-0.5 shadow-lg" style="background: #0B8F4D;">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        Fale com a Cintia agora
+      </a>
+      <p class="mt-2 text-center text-xs text-texto/40">⏳ Oferta por tempo limitado</p>
+    </div>
+  </div>
+
+  <!-- Quiz Checkout Modal -->
+  <div id="quiz-overlay" class="fixed inset-0 z-50 flex items-center justify-center px-4 transition-all duration-300" style="background: rgba(0,0,0,.6); backdrop-filter: blur(4px); opacity: 0; visibility: hidden;">
+    <div class="relative w-full max-w-lg rounded-2xl bg-white shadow-2xl overflow-hidden">
+      <button onclick="closeQuiz()" class="absolute top-3 right-3 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-white/80 text-sm text-texto/50 shadow-sm hover:bg-white hover:text-texto transition-all" aria-label="Fechar">✕</button>
+
+      <!-- Header -->
+      <div style="background: linear-gradient(135deg, #123B7A, #1E88D8);" class="px-6 pt-6 pb-5 text-center relative">
+        <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/20 shadow-inner">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </div>
+        <h3 class="mt-3 text-xl font-extrabold text-white">Finalizar Contratação</h3>
+        <p class="mt-1 text-sm text-white/70">Reviravolta seu MEI em poucos passos</p>
+        <div class="mt-3 flex items-center justify-center gap-1.5">
+          <span class="flex h-1.5 w-6 rounded-full" id="quiz-prog-1" style="background:rgba(255,255,255,.5);"></span>
+          <span class="flex h-1.5 w-6 rounded-full" id="quiz-prog-2" style="background:rgba(255,255,255,.2);"></span>
+          <span class="flex h-1.5 w-6 rounded-full" id="quiz-prog-3" style="background:rgba(255,255,255,.2);"></span>
+        </div>
+      </div>
+
+      <div class="px-6 py-5">
+        <p id="quiz-error" class="hidden mb-4 rounded-lg bg-red-50 px-4 py-2.5 text-xs text-red-600 border border-red-200 flex items-center gap-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Preencha todos os campos obrigatórios.
+        </p>
+
+        <!-- Step 1 - Carrinho + Dados -->
+        <div id="quiz-step-1">
+          <div class="rounded-xl border border-slate-100 bg-gradient-to-br from-azul/[.03] to-white p-4 mb-5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-azul/10">
+                  <i data-lucide="shopping-cart" class="w-5 h-5 text-azul"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-texto/50">Serviço selecionado</p>
+                  <p class="text-sm font-bold text-azul" id="quiz-cart-service">Regularização MEI</p>
+                </div>
+              </div>
+              <span class="text-lg font-extrabold text-verde" id="quiz-cart-price">R$ 79,90</span>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="mb-1.5 block text-sm font-semibold text-texto">Seu nome completo</label>
+            <div class="relative">
+              <i data-lucide="user" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-texto/30"></i>
+              <input id="quiz-name" type="text" class="w-full rounded-xl border border-slate-200 bg-white py-3 pl-10 pr-4 text-sm text-texto outline-none transition-all focus:border-claro focus:ring-2 focus:ring-claro/20" placeholder="Como podemos te chamar?">
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="mb-1.5 block text-sm font-semibold text-texto">WhatsApp com DDD</label>
+            <div class="relative">
+              <i data-lucide="phone" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-texto/30"></i>
+              <input id="quiz-phone" type="tel" class="w-full rounded-xl border border-slate-200 bg-white py-3 pl-10 pr-4 text-sm text-texto outline-none transition-all focus:border-claro focus:ring-2 focus:ring-claro/20" placeholder="(00) 00000-0000">
+            </div>
+          </div>
+          <div class="flex items-center gap-2 mb-4 text-xs text-texto/40">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span>Seus dados estão protegidos e não serão compartilhados</span>
+          </div>
+          <button onclick="nextQuizStep()" class="w-full rounded-xl bg-verde px-5 py-3.5 text-sm font-bold text-white transition-all hover:bg-verde/90 hover:-translate-y-0.5 shadow-md flex items-center justify-center gap-2">
+            Continuar para confirmação
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+
+        <!-- Step 2 - Confirmação com passo a passo -->
+        <div id="quiz-step-2" class="hidden">
+          <div class="rounded-xl border border-slate-100 bg-white p-4 mb-4 shadow-sm">
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+              <div class="flex h-9 w-9 items-center justify-center rounded-full bg-verde/10">
+                <i data-lucide="check-circle" class="w-4.5 h-4.5 text-verde"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-extrabold text-azul">Resumo do pedido</h4>
+                <p class="text-xs text-texto/50">Confira os dados e escolha como prosseguir</p>
+              </div>
+            </div>
+            <div class="mt-3 grid grid-cols-2 gap-2 text-xs">
+              <div class="rounded-lg bg-azul/[.03] px-3 py-2">
+                <span class="text-texto/40">Serviço</span>
+                <p class="font-bold text-azul" id="quiz-summary-service"></p>
+              </div>
+              <div class="rounded-lg bg-azul/[.03] px-3 py-2">
+                <span class="text-texto/40">Valor</span>
+                <p class="font-bold text-verde" id="quiz-summary-price"></p>
+              </div>
+              <div class="rounded-lg bg-azul/[.03] px-3 py-2">
+                <span class="text-texto/40">Nome</span>
+                <p class="font-semibold text-texto truncate" id="quiz-summary-name"></p>
+              </div>
+              <div class="rounded-lg bg-azul/[.03] px-3 py-2">
+                <span class="text-texto/40">WhatsApp</span>
+                <p class="font-semibold text-texto" id="quiz-summary-phone"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-gradient-to-br from-azul/[.03] to-white border border-azul/10 px-4 py-4 mb-4">
+            <p class="text-xs font-bold text-azul uppercase tracking-wider mb-3 flex items-center gap-1.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+              Próximos passos
+            </p>
+            <div class="flex flex-col gap-2 text-sm text-texto/70">
+              <div class="flex items-center gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-azul/10 text-xs font-bold text-azul">1</span>
+                <span>Você solicita e informa os dados</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-claro/10 text-xs font-bold text-claro">2</span>
+                <span>Analisamos seu caso e preparamos a melhor solução</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-verde/10 text-xs font-bold text-verde">3</span>
+                <span>Entramos em contato pelo WhatsApp com a proposta</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amarelo/10 text-xs font-bold text-amarelo">4</span>
+                <span>Executamos o serviço com acompanhamento contínuo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2.5">
+            <button onclick="finishQuiz()" class="w-full rounded-xl bg-verde px-5 py-3.5 text-sm font-bold text-white transition-all hover:bg-verde/90 hover:-translate-y-0.5 shadow-md flex items-center justify-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Confirmar e aguardar contato
+            </button>
+            <div class="relative flex items-center gap-2 text-xs text-texto/30 before:h-px before:flex-1 before:bg-slate-100 after:h-px after:flex-1 after:bg-slate-100">ou</div>
+            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center gap-2 rounded-xl px-5 py-3.5 text-sm font-bold text-white transition-all hover:-translate-y-0.5 shadow-md" style="background:#25D366;" onclick="closeQuiz()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Falar agora com um Especialista
+            </a>
+          </div>
+          <button onclick="document.getElementById('quiz-step-2').classList.add('hidden');document.getElementById('quiz-step-1').classList.remove('hidden');document.getElementById('quiz-prog-1').style.background='rgba(255,255,255,.5)';document.getElementById('quiz-prog-2').style.background='rgba(255,255,255,.2)';" class="mt-3 w-full text-center text-xs font-semibold text-texto/40 hover:text-texto/70 transition-colors">
+            ← Voltar e corrigir dados
+          </button>
+        </div>
+
+        <!-- Step 3 - Sucesso -->
+        <div id="quiz-step-3" class="hidden text-center">
+          <div class="py-3">
+            <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-verde/10 mb-4">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0B8F4D" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h4 class="text-xl font-extrabold text-azul">Pedido Confirmado! 🎉</h4>
+            <p class="mt-2 text-sm text-texto/60 leading-relaxed max-w-sm mx-auto">
+              Recebemos sua solicitação de <strong id="quiz-success-service">Regularização MEI</strong>. 
+              Nossa equipe já foi notificada e <strong>entrará em contato pelo WhatsApp em poucos minutos</strong> para dar continuidade.
+            </p>
+            <button onclick="closeQuiz()" class="mt-6 w-full rounded-xl bg-azul px-5 py-3.5 text-sm font-bold text-white transition-all hover:bg-azul/90 flex items-center justify-center gap-2">
+              Entendi, aguardarei o contato
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Consent Bar -->
+  <div id="cookie-bar" class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/20 shadow-2xl transition-all duration-500" style="background: linear-gradient(135deg, #123B7A, #1a4d8e); transform: translateY(100%);">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-4 sm:flex-row">
+      <div class="flex items-center gap-3 text-sm text-white/80">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(244,194,13,.8)" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+        <span>Nos preocupamos com sua privacidade. Utilizamos cookies essenciais para o funcionamento do site e, ao continuar navegando, você concorda com nossa <a href="#" onclick="event.preventDefault();openPolicy('privacidade')" class="font-medium underline hover:text-white transition-colors">Política de Privacidade</a> em conformidade com a <strong class="text-white/90">LGPD</strong>.</span>
+      </div>
+      <div class="flex shrink-0 gap-2">
+        <button onclick="closeCookieBar()" class="rounded-lg border border-white/20 px-5 py-2 text-xs font-semibold text-white/70 transition-all hover:bg-white/10 hover:text-white">Preferências</button>
+        <button onclick="closeCookieBar()" class="rounded-lg px-5 py-2 text-xs font-bold text-white transition-all hover:-translate-y-0.5 shadow-md" style="background:#0B8F4D;">Aceitar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Policy Modals -->
+  <div id="policy-overlay" class="fixed inset-0 z-[60] flex items-center justify-center px-4 transition-all duration-300" style="background: rgba(0,0,0,.6); backdrop-filter: blur(4px); opacity: 0; visibility: hidden;">
+    <div class="relative max-h-[85vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white shadow-2xl">
+      <button onclick="closePolicy()" class="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-sm text-texto/50 shadow-sm hover:bg-white hover:text-texto transition-all" aria-label="Fechar">✕</button>
+      <div id="policy-content" style="padding: 2rem;">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+
+      // Mobile menu toggle
+      const menuButton = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuButton.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        const icon = menuButton.querySelector('i');
+        icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+        lucide.createIcons();
+      });
+
+      window.closeMobileMenu = () => {
+        mobileMenu.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        const icon = menuButton.querySelector('i');
+        icon.setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      };
+
+      // FAQ Accordion
+      document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const item = button.closest('.accordion-item');
+          const willOpen = !item.classList.contains('open');
+          document.querySelectorAll('.accordion-item').forEach(entry => {
+            entry.classList.remove('open');
+            entry.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
+          });
+          if (willOpen) {
+            item.classList.add('open');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Contact form
+      const contactForm = document.getElementById('contact-form');
+      const contactStatus = document.getElementById('contact-status');
+      contactForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        if (!contactForm.checkValidity()) {
+          contactForm.reportValidity();
+          return;
+        }
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<svg class="animate-spin w-5 h-5" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" opacity=".25"/><path d="M4 12a8 8 0 018-8" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg> Enviando...';
+        contactStatus.textContent = '';
+
+        setTimeout(() => {
+          submitButton.disabled = false;
+          submitButton.innerHTML = '<i data-lucide="message-circle" class="w-5 h-5"></i> Quero Atendimento no WhatsApp';
+          lucide.createIcons();
+          contactStatus.textContent = 'Recebemos sua solicitação! Em breve entraremos em contato pelo WhatsApp.';
+          contactStatus.className = 'text-center text-sm font-semibold text-verde';
+          contactForm.reset();
+          setTimeout(() => { contactStatus.textContent = ''; }, 8000);
+        }, 1500);
+      });
+
+      // Search form — filter FAQ items
+      const searchForm = document.getElementById('search-form');
+      const searchInput = document.getElementById('site-search');
+      const faqList = document.getElementById('faq-list');
+      const faqSection = document.getElementById('faq');
+      const allFaqItems = Array.from(document.querySelectorAll('.accordion-item'));
+
+      function filterFAQ(term) {
+        let hasResults = false;
+        allFaqItems.forEach(item => {
+          const match = item.textContent.toLowerCase().includes(term);
+          item.style.display = match ? '' : 'none';
+          if (match) hasResults = true;
+        });
+        return hasResults;
+      }
+
+      function resetFAQ() {
+        allFaqItems.forEach(item => item.style.display = '');
+      }
+
+      searchForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const term = searchInput.value.trim().toLowerCase();
+        if (!term) return;
+        const hasResults = filterFAQ(term);
+        faqSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (!hasResults) {
+          const noResult = document.getElementById('faq-no-result') || document.createElement('p');
+          noResult.id = 'faq-no-result';
+          noResult.className = 'text-center text-sm text-texto/50 mt-4';
+          noResult.textContent = 'Nenhuma pergunta encontrada. Tente outro termo ou entre em contato conosco.';
+          faqList.appendChild(noResult);
+        }
+      });
+
+      searchInput.addEventListener('input', () => {
+        const existing = document.getElementById('faq-no-result');
+        if (existing) existing.remove();
+        if (!searchInput.value.trim()) resetFAQ();
+      });
+
+      searchInput.addEventListener('search', () => {
+        if (!searchInput.value) resetFAQ();
+      });
+
+      // Scroll reveal
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+            window.scrollTo({ top, behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Header shadow on scroll
+      const header = document.querySelector('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          header.classList.add('shadow-md');
+          header.classList.remove('shadow-sm');
+        } else {
+          header.classList.remove('shadow-md');
+          header.classList.add('shadow-sm');
+        }
+      });
+
+      // WhatsApp balloon auto-show with pop sound
+      const balloon = document.getElementById('whatsapp-balloon');
+      const balloonClose = document.getElementById('balloon-close');
+      const modal = document.getElementById('offer-modal');
+      const modalClose = document.getElementById('modal-close');
+      let balloonTimer;
+
+      function playPopSound() {
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          const oscillator = ctx.createOscillator();
+          const gain = ctx.createGain();
+          oscillator.connect(gain);
+          gain.connect(ctx.destination);
+          oscillator.frequency.setValueAtTime(600, ctx.currentTime);
+          oscillator.frequency.exponentialRampToValueAtTime(200, ctx.currentTime + 0.12);
+          gain.gain.setValueAtTime(0.3, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.12);
+          oscillator.start(ctx.currentTime);
+          oscillator.stop(ctx.currentTime + 0.12);
+        } catch(e) {}
+      }
+
+      function showBalloon() {
+        if (!balloon.classList.contains('show')) {
+          balloon.classList.remove('hide');
+          balloon.classList.add('show');
+          playPopSound();
+        }
+      }
+
+      function hideBalloon() {
+        balloon.classList.remove('show');
+        balloon.classList.add('hide');
+        clearTimeout(balloonTimer);
+        setTimeout(showModal, 2000);
+      }
+
+      balloonClose.addEventListener('click', hideBalloon);
+
+      // Open WhatsApp on balloon CTA click
+      document.getElementById('whatsapp-balloon').querySelector('a').addEventListener('click', (e) => {
+        e.preventDefault();
+        window.open('https://wa.me/5500000000000', '_blank');
+        hideBalloon();
+      });
+
+      // Modal
+      function showModal() {
+        modal.classList.add('show');
+        playPopSound();
+      }
+
+      function hideModal() {
+        modal.classList.remove('show');
+        balloonTimer = setTimeout(showBalloon, 60000);
+      }
+
+      document.getElementById('offer-modal').querySelector('a').addEventListener('click', (e) => {
+        e.preventDefault();
+        window.open('https://wa.me/5500000000000', '_blank');
+        hideModal();
+      });
+
+      modalClose.addEventListener('click', hideModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) hideModal();
+      });
+
+      // Movimento Section
+      const movimentoSection = document.getElementById('movimento');
+      if (movimentoSection) {
+        const avatarNames = [
+          'AC','MR','LF','PS','JT','AR','MS','BF','RL','DC',
+          'GP','TA','LS','CF','VN','SB','JM','AK','FT','PO',
+          'MG','NL','RS','IC','DM','BR','GA','EA','LP','CV'
+        ];
+        const statuses = ['completed','ongoing','pending','completed','ongoing','completed','pending','completed','ongoing','completed'];
+        const avatarContainer = document.getElementById('avatars-container');
+        const linesSvg = document.getElementById('lines-svg');
+        if (avatarContainer) {
+          const count = 28;
+          const centerRing = 220;
+          const outerRing = 270;
+          const avatars = [];
+          for (let i = 0; i < count; i++) {
+            const angle = (i / count) * 360 + Math.random() * 8 - 4;
+            const radius = i % 2 === 0 ? centerRing + Math.random() * 40 : outerRing + Math.random() * 30;
+            const rad = (angle * Math.PI) / 180;
+            const x = Math.cos(rad) * radius;
+            const y = Math.sin(rad) * radius;
+            const name = avatarNames[i % avatarNames.length];
+            const status = statuses[i % statuses.length];
+            const delay = .05 + i * .08;
+            avatars.push({ x, y, name, status, delay, angle, radius });
+          }
+
+          avatars.forEach((a, i) => {
+            const dot = a.status === 'ongoing'
+              ? `<span class="avatar-dot-fast absolute -top-[3px] -right-[3px] h-[10px] w-[10px] rounded-full border-2 border-white" style="background:#1E88D8;"></span>`
+              : a.status === 'completed'
+                ? `<span class="absolute -top-[3px] -right-[3px] flex h-[10px] w-[10px] items-center justify-center rounded-full bg-verde shadow-sm shadow-verde/40"><svg width="6" height="6" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4"><polyline points="20 6 9 17 4 12"/></svg></span>`
+                : `<span class="absolute -top-[3px] -right-[3px] h-[10px] w-[10px] rounded-full bg-white/20"></span>`;
+
+            const avatar = document.createElement('div');
+            avatar.className = 'absolute flex items-center justify-center rounded-full';
+            avatar.style.cssText = `
+              width: 36px; height: 36px;
+              left: ${a.x}px; top: ${a.y}px;
+              margin-left: -18px; margin-top: -18px;
+              background: ${a.status === 'completed' ? 'rgba(11,143,77,.25)' : a.status === 'ongoing' ? 'rgba(30,136,216,.25)' : 'rgba(255,255,255,.12)'};
+              border: 1.5px solid ${a.status === 'completed' ? 'rgba(11,143,77,.5)' : a.status === 'ongoing' ? 'rgba(30,136,216,.5)' : 'rgba(255,255,255,.15)'};
+              opacity: 0;
+              animation: avatarIn .6s cubic-bezier(.34,1.56,.64,1) ${a.delay}s forwards;
+              transition: border-color .3s, background .3s;
+              z-index: 2;
+            `;
+            avatar.innerHTML = `<span class="text-[11px] font-bold ${a.status === 'pending' ? 'text-white/40' : 'text-white'}">${a.name}</span>${dot}`;
+            avatarContainer.appendChild(avatar);
+
+            // Line to center
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', a.x);
+            line.setAttribute('y1', a.y);
+            line.setAttribute('x2', 0);
+            line.setAttribute('y2', 0);
+            const len = Math.sqrt(a.x * a.x + a.y * a.y);
+            line.setAttribute('stroke', a.status === 'completed' ? 'rgba(11,143,77,.15)' : 'rgba(30,136,216,.12)');
+            line.setAttribute('stroke-width', '1');
+            line.setAttribute('stroke-dasharray', len);
+            line.setAttribute('stroke-dashoffset', len);
+            line.style.animation = `lineDraw .8s ease ${a.delay + .3}s forwards`;
+            linesSvg.appendChild(line);
+          });
+        }
+
+        // Glass card mouse tracking
+        const glassCards = document.querySelectorAll('.glass-card');
+        glassCards.forEach(card => {
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            card.style.setProperty('--mx', x + '%');
+            card.style.setProperty('--my', y + '%');
+          });
+        });
+
+        // Counter animation
+        const counterItems = document.querySelectorAll('#movimento .counter-val');
+        const counterObs = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const el = entry.target;
+              const target = parseInt(el.dataset.target);
+              if (!el.dataset.animated) {
+                el.dataset.animated = 'true';
+                const dur = 2000;
+                const start = performance.now();
+                function tick(now) {
+                  const p = Math.min((now - start) / dur, 1);
+                  const e = 1 - Math.pow(1 - p, 3);
+                  el.textContent = Math.round(target * e);
+                  if (p < 1) requestAnimationFrame(tick);
+                }
+                requestAnimationFrame(tick);
+              }
+              counterObs.unobserve(el);
+            }
+          });
+        }, { threshold: .3 });
+        counterItems.forEach(el => counterObs.observe(el));
+      }
+
+      // Show balloon after 15s
+      balloonTimer = setTimeout(showBalloon, 15000);
+
+      // Live Feed Popups
+      const feedMessages = [
+        { name: 'Ana C.', city: 'SP', service: 'Regularização MEI', because: 'DAS atrasado', ago: 'há 2 horas', likes: 8 },
+        { name: 'Marcos S.', city: 'RJ', service: 'Abertura MEI', because: 'queria formalizar', ago: 'há 1 hora', likes: 12 },
+        { name: 'Juliana L.', city: 'MG', service: 'Plano MEI em Ordem', because: 'manter tudo em dia', ago: 'ontem', likes: 5 },
+        { name: 'Carlos R.', city: 'BA', service: 'Encerramento MEI', because: 'fechar o CNPJ', ago: 'há 3 horas', likes: 7 },
+        { name: 'Patrícia M.', city: 'PR', service: 'Regularização MEI', because: 'pendências na Receita', ago: 'há 5 horas', likes: 10 },
+        { name: 'Ricardo T.', city: 'RS', service: 'Abertura MEI', because: 'começar a empreender', ago: 'hoje', likes: 15 },
+        { name: 'Fernanda K.', city: 'SC', service: 'Plano MEI em Ordem', because: 'não perder prazos', ago: 'ontem', likes: 6 },
+        { name: 'Diego A.', city: 'PE', service: 'Regularização MEI', because: 'parcelar o DAS', ago: 'há 4 horas', likes: 9 },
+        { name: 'Larissa F.', city: 'CE', service: 'Abertura MEI', because: 'emitir nota fiscal', ago: 'há 2 horas', likes: 11 },
+        { name: 'Roberto N.', city: 'DF', service: 'Encerramento MEI', because: 'mudar de ramo', ago: 'há 6 horas', likes: 4 },
+        { name: 'Vanessa P.', city: 'GO', service: 'Plano MEI em Ordem', because: 'ter suporte contínuo', ago: 'há 1 hora', likes: 13 },
+        { name: 'Eduardo L.', city: 'AM', service: 'Regularização MEI', because: 'regularizar situação', ago: 'há 3 horas', likes: 6 },
+        { name: 'Tatiane R.', city: 'ES', service: 'Abertura MEI', because: 'formalizar o negócio', ago: 'há 2 dias', likes: 8 },
+        { name: 'Felipe B.', city: 'MT', service: 'Encerramento MEI', because: 'vender a empresa', ago: 'ontem', likes: 5 },
+        { name: 'Camila D.', city: 'PA', service: 'Regularização MEI', because: 'declaração anual', ago: 'hoje', likes: 14 },
+      ];
+      const feedColors = ['border-l-azul', 'border-l-verde', 'border-l-amarelo', 'border-l-claro'];
+      const feedContainer = document.getElementById('live-feed');
+      let feedIndex = 0;
+
+      function showFeedPopup() {
+        if (!feedContainer) return;
+        const msg = feedMessages[feedIndex % feedMessages.length];
+        feedIndex++;
+        const colorClass = feedColors[feedIndex % feedColors.length];
+        const div = document.createElement('div');
+        div.className = `feed-popup mb-2.5 rounded-xl border border-white/20 bg-white shadow-lg backdrop-blur-md ${colorClass}`;
+        div.style.cssText = `border-left: 4px solid; box-shadow: 0 4px 24px rgba(0,0,0,.08);`;
+        const initials = msg.name.split(' ').map(s => s[0]).join('').slice(0, 2);
+        div.innerHTML = `
+          <div class="px-4 py-3">
+            <div class="flex items-center gap-3">
+              <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white" style="background:linear-gradient(135deg,#1E88D8,#0B8F4D);">${initials}</div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center gap-2">
+                  <p class="text-sm font-semibold text-texto truncate">${msg.name} · ${msg.city}</p>
+                  <span class="inline-flex items-center gap-1 text-xs text-verde font-medium"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Recomendou</span>
+                </div>
+                <p class="text-xs text-texto/60 leading-snug">Contratou <strong>${msg.service}</strong> — ${msg.because}</p>
+                <div class="flex items-center justify-between mt-1">
+                  <p class="text-[10px] text-texto/40">${msg.ago}</p>
+                  <button onclick="this.classList.toggle('text-verde');this.querySelector('span').textContent=this.classList.contains('text-verde')?${msg.likes + 1}:${msg.likes}" class="flex items-center gap-1 text-xs text-texto/40 hover:text-verde transition-colors">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                    <span>${msg.likes}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+        feedContainer.appendChild(div);
+
+        const removeTimer = setTimeout(() => {
+          div.classList.add('removing');
+          setTimeout(() => div.remove(), 300);
+        }, 6500);
+      }
+
+      // Start feed after 4s, then every 8-14s
+      setTimeout(() => {
+        showFeedPopup();
+        setInterval(() => showFeedPopup(), 8000 + Math.random() * 6000);
+      }, 4000);
+
+      const quizPrices = {
+        'Regularização MEI': 'R$ 79,90',
+        'Abertura MEI': 'R$ 0,00',
+        'Encerramento MEI': 'R$ 59,90',
+        'Plano MEI em Ordem': 'R$ 109,90',
+        'Parcelamento DAS': 'R$ 89,90',
+      };
+
+      function openQuiz(service) {
+        const overlay = document.getElementById('quiz-overlay');
+        if (!overlay) return;
+        const price = quizPrices[service] || 'R$ 79,90';
+        document.getElementById('quiz-cart-service').textContent = service;
+        document.getElementById('quiz-cart-price').textContent = price;
+        document.getElementById('quiz-name').value = '';
+        document.getElementById('quiz-phone').value = '';
+        document.getElementById('quiz-error').classList.add('hidden');
+        document.getElementById('quiz-step-1').classList.remove('hidden');
+        document.getElementById('quiz-step-2').classList.add('hidden');
+        document.getElementById('quiz-step-3').classList.add('hidden');
+        document.getElementById('quiz-prog-1').style.background = 'rgba(255,255,255,.5)';
+        document.getElementById('quiz-prog-2').style.background = 'rgba(255,255,255,.2)';
+        document.getElementById('quiz-prog-3').style.background = 'rgba(255,255,255,.2)';
+        overlay.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function nextQuizStep() {
+        const name = document.getElementById('quiz-name').value.trim();
+        const phone = document.getElementById('quiz-phone').value.trim();
+        if (!name || !phone) {
+          document.getElementById('quiz-error').classList.remove('hidden');
+          return;
+        }
+        document.getElementById('quiz-error').classList.add('hidden');
+        const svc = document.getElementById('quiz-cart-service').textContent;
+        const price = document.getElementById('quiz-cart-price').textContent;
+        document.getElementById('quiz-summary-service').textContent = svc;
+        document.getElementById('quiz-summary-price').textContent = price;
+        document.getElementById('quiz-summary-name').textContent = name;
+        document.getElementById('quiz-summary-phone').textContent = phone;
+        document.getElementById('quiz-step-1').classList.add('hidden');
+        document.getElementById('quiz-step-2').classList.remove('hidden');
+        document.getElementById('quiz-prog-1').style.background = 'rgba(255,255,255,.8)';
+        document.getElementById('quiz-prog-2').style.background = 'rgba(255,255,255,.5)';
+      }
+
+      function finishQuiz() {
+        const svc = document.getElementById('quiz-summary-service').textContent;
+        document.getElementById('quiz-success-service').textContent = svc;
+        document.getElementById('quiz-step-2').classList.add('hidden');
+        document.getElementById('quiz-step-3').classList.remove('hidden');
+        document.getElementById('quiz-prog-1').style.background = 'rgba(255,255,255,.8)';
+        document.getElementById('quiz-prog-2').style.background = 'rgba(255,255,255,.8)';
+        document.getElementById('quiz-prog-3').style.background = 'rgba(255,255,255,.5)';
+      }
+
+      function closeQuiz() {
+        const overlay = document.getElementById('quiz-overlay');
+        if (overlay) overlay.classList.remove('show');
+        document.body.style.overflow = '';
+      }
+
+      // Bind quiz to "Contratar" buttons in service cards and the hero specialist CTA
+      document.querySelectorAll('.service-card a[href="#contato"], .service-card button').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const card = el.closest('.service-card');
+          let service = 'Regularização MEI';
+          if (card) {
+            const h3 = card.querySelector('h3');
+            if (h3) {
+              const t = h3.textContent.trim();
+              if (t.includes('Regularização')) service = 'Regularização MEI';
+              else if (t.includes('Abertura')) service = 'Abertura MEI';
+              else if (t.includes('Encerramento')) service = 'Encerramento MEI';
+              else if (t.includes('Plano')) service = 'Plano MEI em Ordem';
+              else if (t.includes('DAS') || t.includes('Parcelamento')) service = 'Parcelamento DAS';
+            }
+          }
+          openQuiz(service);
+        });
+      });
+      // Also bind the hero CTA
+      const heroCta = document.querySelector('.hero-cta');
+      if (heroCta) {
+        heroCta.addEventListener('click', (e) => {
+          e.preventDefault();
+          openQuiz('Regularização MEI');
+        });
+      }
+
+      // Cookie Bar
+      const cookieBar = document.getElementById('cookie-bar');
+      if (!localStorage.getItem('cookie-consent')) {
+        setTimeout(() => cookieBar.classList.add('show'), 800);
+      }
+      window.closeCookieBar = function() {
+        cookieBar.classList.remove('show');
+        localStorage.setItem('cookie-consent', 'true');
+      };
+
+      // Policy Modal
+      const policyContent = {
+        privacidade: {
+          title: 'Política de Privacidade',
+          sections: [
+            { h: '1. Coleta de Dados', p: 'Coletamos informações pessoais fornecidas voluntariamente por você, como nome, telefone e e-mail, através de nossos formulários de contato e WhatsApp.' },
+            { h: '2. Uso das Informações', p: 'Seus dados são utilizados exclusivamente para: prestar os serviços contratados; entrar em contato sobre sua solicitação; enviar informações relevantes sobre seu MEI; cumprir obrigações legais e regulatórias.' },
+            { h: '3. Compartilhamento', p: 'Não compartilhamos seus dados com terceiros sem seu consentimento, exceto quando exigido por lei ou para execução do serviço contratado (como órgãos governamentais).' },
+            { h: '4. Segurança', p: 'Adotamos medidas técnicas e organizacionais para proteger seus dados contra acesso não autorizado, perda ou vazamento, incluindo criptografia e controle de acesso.' },
+            { h: '5. Cookies', p: 'Utilizamos cookies essenciais para o funcionamento do site. Você pode configurar suas preferências a qualquer momento.' },
+            { h: '6. Seus Direitos', p: 'Você pode solicitar a qualquer momento: acesso, correção, exclusão ou portabilidade dos seus dados. Entre em contato pelo WhatsApp para exercer seus direitos.' },
+            { h: '7. Contato', p: 'Para dúvidas sobre esta política, entre em contato conosco pelo WhatsApp (00) 00000-0000 ou e-mail contato@descomplimei.com.br.' },
+          ]
+        },
+        termos: {
+          title: 'Termos de Uso',
+          sections: [
+            { h: '1. Aceitação', p: 'Ao utilizar nosso site e serviços, você concorda com os termos aqui descritos. Se não concordar, não utilize nossos serviços.' },
+            { h: '2. Serviços', p: 'A Descomplimei presta serviços de contabilidade popular para MEI, incluindo regularização, abertura, encerramento e plano de manutenção mensal. Os serviços são prestados exclusivamente de forma online.' },
+            { h: '3. Obrigações do Cliente', p: 'O cliente se compromete a: fornecer informações verdadeiras e atualizadas; comunicar alterações cadastrais; utilizar os serviços de acordo com a lei; não utilizar os serviços para atividades ilícitas.' },
+            { h: '4. Pagamentos', p: 'Os preços dos serviços estão descritos no site. O pagamento é processado de forma segura. A não realização do pagamento pode resultar na suspensão dos serviços.' },
+            { h: '5. Cancelamento', p: 'O cliente pode cancelar o serviço a qualquer momento. O reembolso segue nossa política específica de cada plano.' },
+            { h: '6. Limitação de Responsabilidade', p: 'A Descomplimei não se responsabiliza por informações incorretas fornecidas pelo cliente ou por atrasos decorrentes de terceiros (como sistemas governamentais).' },
+            { h: '7. Alterações', p: 'Estes termos podem ser alterados a qualquer momento. As alterações serão comunicadas aos clientes pelos canais oficiais.' },
+          ]
+        }
+      };
+
+      window.openPolicy = function(type) {
+        const overlay = document.getElementById('policy-overlay');
+        const content = document.getElementById('policy-content');
+        const data = policyContent[type];
+        if (!data) return;
+        let html = `<div class="policy-section"><div class="flex items-center gap-3 mb-5"><div class="flex h-10 w-10 items-center justify-center rounded-xl" style="background:rgba(18,59,122,.1);"><span class="text-lg font-black" style="color:#123B7A;">D</span></div><div><h2 class="text-xl font-extrabold" style="color:#123B7A;">${data.title}</h2><p class="text-xs text-texto/50">Descomplimei Contabilidade Popular Ltda.</p></div></div>`;
+        data.sections.forEach(s => {
+          html += `<h4>${s.h}</h4><p>${s.p}</p>`;
+        });
+        html += `<div class="mt-6 pt-4 border-t border-slate-100"><p class="text-xs text-texto/40">Última atualização: julho de 2025</p></div></div>`;
+        content.innerHTML = html;
+        overlay.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      };
+
+      window.closePolicy = function() {
+        document.getElementById('policy-overlay').classList.remove('show');
+        document.body.style.overflow = '';
+      };
+
+      // Close policy on backdrop click
+      document.getElementById('policy-overlay').addEventListener('click', (e) => {
+        if (e.target === e.currentTarget) closePolicy();
+      });
+    });
+  </script>
+
+  <!-- Schema.org FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"O que é MEI e quem pode se formalizar?","acceptedAnswer":{"@type":"Answer","text":"MEI é o Microempreendedor Individual, uma categoria simplificada para quem trabalha por conta própria e fatura até R$ 81.000,00 por ano."}},
+      {"@type":"Question","name":"Como funciona a regularização do MEI?","acceptedAnswer":{"@type":"Answer","text":"A regularização envolve o levantamento completo da situação do seu MEI, identificação de pendências e a realização dos procedimentos necessários para colocar o CNPJ em dia."}},
+      {"@type":"Question","name":"Posso parcelar o DAS atrasado?","acceptedAnswer":{"@type":"Answer","text":"Sim. Após a análise da situação do seu MEI, orientamos sobre as possibilidades de parcelamento das pendências junto à Receita Federal."}},
+      {"@type":"Question","name":"Como faço para encerrar meu MEI?","acceptedAnswer":{"@type":"Answer","text":"Para encerrar o MEI, é necessário dar baixa no CNPJ junto à Receita Federal. Nossa equipe orienta sobre os documentos necessários e conduz todo o processo."}},
+      {"@type":"Question","name":"Quanto custa para abrir um MEI?","acceptedAnswer":{"@type":"Answer","text":"A abertura do MEI é gratuita para quem contrata o Plano MEI em Ordem (permanência mínima de 3 meses)."}}
+    ]
+  }
+  </script>
+
+  <!-- Schema.org Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Regularização MEI",
+    "provider": {"@type": "LocalBusiness", "name": "Descomplimei"},
+    "description": "Regularização de MEI com levantamento completo e parcelamento DAS incluso.",
+    "priceRange": "R$ 79,90"
+  }
+  </script>
+
+</body>
+</html>
